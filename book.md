@@ -227,7 +227,7 @@ Demonstration." *Assessing Writing* 20 (April): 53--76.
 
 <a id="eligibility"></a>
 
-## Eligibility Information 
+## Eligibility Information
 
 Institutions and individuals that have the ability and capacity to
 conduct research are eligible to apply. Eligible applicants include, but
@@ -315,13 +315,13 @@ in this competition.
 
 ------------------------------------------------------------------------
 
-[$$1$$](#_ftnref1) Individuals at selected organizations must access and
+[$$1$$](#_ftnref1)Individuals at selected organizations must access and
 analyze the data in the United States but they do not need to be U.S.
 citizens or residents. For example, a foreign student at a U.S.-based
 university may participate in the challenge as long as they are
 analyzing the data from within the United States.
 
-# Eligibility Information
+## Eligibility Information
 
 Institutions and individuals that have the ability and capacity to
 conduct research are eligible to apply. Eligible applicants include, but
@@ -331,7 +331,7 @@ universities. Due to prior access to the items and test data, current
 NAEP Alliance member organizations are not eligible to participate.
 Organizations must be located within the United States due to data
 privacy requirements. In addition to these criteria, organizations must
-meet the following criteria: [$$1$$](#_ftn1)
+meet the following criteria:
 
 ## Requirements
 
@@ -414,7 +414,9 @@ citizens or residents. For example, a foreign student at a U.S.-based
 university may participate in the challenge as long as they are
 analyzing the data from within the United States.
 
-<a id="dataset"></a> Dataset Description ================
+<a id="dataset"></a>
+
+## Dataset Description
 
 Participants will be provided access to digital files that contain
 information related to the assessment items, the scoring guides used to
@@ -505,7 +507,7 @@ for all items in the source data. Those variables are described in the
 table below.
 
 | Variable         | Description                                                                                             | Type    | Values (if constrained)                                                                                                                                                               |
-|:----------------|:----------------|:----------------|:--------------------|
+|:-----------------|:-----------------|:-----------------|:-------------------|
 | student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
 | year             | Year assessment was administered                                                                        | integer | 2017, or 2019                                                                                                                                                                         |
 | blockcode        | NAEP item block identifier                                                                              | string  | example "1717MA1N05CLID30EX"                                                                                                                                                          |
