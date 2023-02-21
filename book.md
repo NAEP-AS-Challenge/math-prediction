@@ -532,17 +532,17 @@ Variables that are common across all items
 
 ## Data Processing Information
 
-There are six "atomic-scored" items which were composed of multiple
+There are six "Type I" items which were composed of multiple
 sub-items or parts that each have their own set of scores and response
 fields. For the purpose of the challenge, participants are requested to
 score one part of the item which contains a section that is potentially
-scorable using NLP. For the four other items, called "component-scored"
+scorable using NLP. For the four other items, called "Type II"
 items here, there are multiple parts within an item; however, these
 parts are considered dependently linked portions of the item and, as
 such, were assigned a single score that encompasses the responses
 contained within both parts.
 
-For the "component-scored" items, the sub-item scores have been combined
+For the "Type II" items, the sub-item scores have been combined
 into a single "assigned_score" variable which is described in the common
 variables table above. The original part scores are also included and
 can be decoded using the item scoring guides provided in "[*Item
