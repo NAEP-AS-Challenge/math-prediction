@@ -152,7 +152,7 @@ A custom rubric and scoring guide is created for each item and used to
 train human scorers. Successful respondents should also build a
 predictive model specific to each item, using current state-of-the-art
 practices in natural language processing. As described more extensively
-in the "[Dataset](#dataset) section, for some items the constructed
+in the [Dataset](#dataset) section, for some items the constructed
 response portion of the item is scored in isolation from other aspects
 of the response, and in other items there is an overall score in which
 the predicted score will incorporate results from calculations in
@@ -438,7 +438,7 @@ The training dataset will be provided first and then a test dataset
 deadline. Detailed information about responses included for each item is
 provided in the "Variables with different meanings for each item"
 section below and in the scoring guides included in the "[*Item
-information.zip*](data/Item%20information.zip)" file.
+information.zip*](resources/Item%20information.zip)" file.
 
 ## Summary Item Information
 
@@ -507,7 +507,7 @@ for all items in the source data. Those variables are described in the
 table below.
 
 | Variable         | Description                                                                                             | Type    | Values (if constrained)                                                                                                                                                               |
-|:-----------------|:-----------------|:-----------------|:-------------------|
+|:-----------------|:-----------------|:-----------------|:------------------|
 | student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
 | year             | Year assessment was administered                                                                        | integer | 2017, or 2019                                                                                                                                                                         |
 | blockcode        | NAEP item block identifier                                                                              | string  | example "1717MA1N05CLID30EX"                                                                                                                                                          |
@@ -530,33 +530,42 @@ table below.
 
 Variables that are common across all items
 
-## Data Processing Information
+## Item Classification & Dataset Processing
 
-There are six "Type I" items which were composed of multiple
-sub-items or parts that each have their own set of scores and response
-fields. For the purpose of the challenge, participants are requested to
-score one part of the item which contains a section that is potentially
-scorable using NLP. For the four other items, called "Type II"
-items here, there are multiple parts within an item; however, these
-parts are considered dependently linked portions of the item and, as
-such, were assigned a single score that encompasses the responses
-contained within both parts.
+We have classified the 10 items into "Type 1" and "Type 2" for the
+purpose of automated scoring; please note that these are categories
+created only for the purpose of this challenge and do not conform to
+NCES/NAEP conventions nor psychometric standard definitions, which we
+thought would be confusing when applied in this automated scoring
+context.\
+\
+There are six "Type I" items which are composed of multiple parts that
+each have a score and response fields. For the purpose of the challenge,
+participants are requested to score one part of the item which contains
+a section that is potentially scorable using NLP. For the four other
+items, called "Type II" items here, there are multiple parts within an
+item; however, these parts are dependently linked portions of the item
+and, as such, were assigned a single score that encompasses the
+responses contained within two or more parts.
 
-For the "Type II" items, the sub-item scores have been combined
-into a single "assigned_score" variable which is described in the common
+For the "Type II" items, the sub-item scores have been combined into a
+single "assigned_score" variable which is described in the common
 variables table above. The original part scores are also included and
 can be decoded using the item scoring guides provided in "[*Item
-information.zip*](data/Item%20information.zip)" which will be provided
-to participants with the responses upon approval of the data
-application.
+information.zip*](data/Item%20information.zip)".
 
-Note that this composite variable is *not* always the outcome which
-contestants should predict. To make it clear which outcome contestants
-should predict, we've created a variable "`score_to_predict`" which is
-the field which will be used as the outcome variable to create predicted
-scores for. We've also created a variable named "`predict_from`" to
-identify the text with the most relevant constructed response text to
-use when creating predicted scores.
+To make it clear which outcome contestants should predict, we've created
+a variable "`score_to_predict`" which is the field which will be used as
+the outcome variable to create predicted scores for. We've also created
+a variable named "`predict_from`" to identify the text with the most
+relevant constructed response text to use when creating predicted
+scores, although as noted, some scores include more than just the text
+in the scoring decision. Participants are encouraged to use all item
+parts in their scoring model to improve performance.\
+\
+[INSERT TEXT RE: HUMAN SCORING HERE]
+
+### Dataset processing
 
 The original item data contained extended constructed response and short
 constructed response (ECR and CR) text, item selections for multiple
@@ -580,6 +589,43 @@ data was analyzed for sensitive information
 (e.g. personally-identifiable information, profanity, toxic language)
 and some responses were removed as a result. However, spellcheck has not
 been applied to correct what may be obvious spelling errors.
+
+## Information about constructed response fields
+
+Many items include one or more constructed response. While many of these
+are short, non-textual responses like equations, the following plots
+provide some information about the distribution of word and character
+counts found in the these responses. <br>\
+<br>
+
+![Word count (excluding numbers and
+symbols)](files_for_readme/word_count_boxplot.png){alt="Word count (excluding numbers and symbols)"
+style="width:80.0%"} <br>\
+![Word count with numbers and
+symbols](files_for_readme/word_count_wmaths_boxplot.png){alt="Word count with numbers and symbols"
+style="width:80.0%"} <br>
+
+## Inter-rater Reliability
+
+Approximately 5% of the NAEP item responses were double scored.
+Quadradic Weighted Kappa (QWK) was calculated to estimate the
+inter-rater reliability for the double-scored responses. The inter-rater
+reliability estimates for all items are presented below.
+
+|   Item   | IRR (QWK) |    Score Type    |
+|:--------:|:---------:|:----------------:|
+| VH134067 |   0.966   | component-scored |
+| VH139380 |   0.981   | component-scored |
+| VH266015 |   0.963   | component-scored |
+| VH266510 |   0.933   | component-scored |
+| VH269384 |   0.970   |  atomic-scored   |
+| VH271613 |   0.977   |  atomic-scored   |
+| VH302907 |   0.980   | component-scored |
+| VH304954 |   0.985   | component-scored |
+| VH507804 |   0.991   |  atomic-scored   |
+| VH525628 |   0.957   |  atomic-scored   |
+
+Inter-rater reliability, by item
 
 ## Variables with different meanings for each item
 
@@ -685,41 +731,6 @@ are stored as fixed length logical vectors (e.g., "TRUE TRUE"). <br>
 **target4**-- drag and drop tile "to" <br>\
 **parsed_xml_v1**-- CR text <br>
 
-## Information about constructed response fields
-
-Many items include one or more constructed response. While many of these
-are short, non-textual responses like equations, the following plots
-provide some information about the distribution of word and character
-counts found in the these responses. <br>\
-<br>
-
-<img src="files_for_readme/word_count_boxplot.png" alt="Word count (excluding numbers and symbols)" style="width:80.0%"/>
-<br>\
-<img src="files_for_readme/word_count_wmaths_boxplot.png" alt="Word count with numbers and symbols" style="width:80.0%"/>
-<br>
-
-## Inter-rater Reliability
-
-Approximately 5% of the NAEP item responses were double scored.
-Quadradic Weighted Kappa (QWK) was calculated to estimate the
-inter-rater reliability for the double-scored responses. The inter-rater
-reliability estimates for all items are presented below.
-
-|   Item   | IRR (QWK) |    Score Type    |
-|:--------:|:---------:|:----------------:|
-| VH134067 |   0.966   | component-scored |
-| VH139380 |   0.981   | component-scored |
-| VH266015 |   0.963   | component-scored |
-| VH266510 |   0.933   | component-scored |
-| VH269384 |   0.970   |  atomic-scored   |
-| VH271613 |   0.977   |  atomic-scored   |
-| VH302907 |   0.980   | component-scored |
-| VH304954 |   0.985   | component-scored |
-| VH507804 |   0.991   |  atomic-scored   |
-| VH525628 |   0.957   |  atomic-scored   |
-
-Inter-rater reliability, by item
-
 ## Suppression
 
 To minimize the risk of statistical disclosure, suppression was applied
@@ -758,9 +769,11 @@ sets. <br>
 
 N Counts for test and train split files
 
-<a id="evaluation"></a> Evaluation Criteria ================
+<a id="evaluation"></a>
 
-## Prediction Challenge
+## Evaluation Criteria
+
+### Prediction Challenge
 
 The first challenge will predict the score assigned by a human rater as
 accurately as possible using natural language processing methods. There
@@ -810,7 +823,7 @@ will be equally weighted in the review:
     were harder to score and reasons for these results.
 
 In addition to this analysis, core fairness analyses may include
-additional conventional and proven measures such as:
+additional methods such as:
 
 -   Comparison of rater agreement: compare human to human with human to
     machine rater agreement overall and for each of the demographic
@@ -847,8 +860,8 @@ be considered incorrect.
 Two thresholds must be achieved for an item to be deemed "sufficiently
 accurate":
 
-1.  **Prediction compared to human agreement**. The model to human
-    agreement must be within QWK 0.05 of the human inter-rater
+1.  **Prediction compared to human agreement**. The predictive model to
+    human agreement should be within QWK 0.05 of the human inter-rater
     reliability for the same item (as specified in the "Dataset"
     section);
 
@@ -860,10 +873,10 @@ accurate":
     accommodations, English learner status, Individualized Education
     Plan. The formula to calculate SMD is provided in Appendix A.
 
-These threshold levels may be changed based on submitted results at the
-discretion of NCES. Items meeting these submissions will be counted and
-the response with the most items meeting these requirements will be
-deemed the winner.
+*NOTE: These threshold levels may be changed at the discretion of NCES
+in response to submitted items received*. Items meeting these
+submissions will be counted and the response with the most items meeting
+these requirements will be deemed the winner.
 
 **Secondary Criteria: Average Scoring Accuracy at Item-Level.** In the
 case that there is a tie, average scoring accuracy by item will be used
