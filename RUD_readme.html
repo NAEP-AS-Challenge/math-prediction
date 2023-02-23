@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>rud_readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="RUD_readme_files/libs/clipboard/clipboard.min.js"></script>
+<script src="RUD_readme_files/libs/quarto-html/quarto.js"></script>
+<script src="RUD_readme_files/libs/quarto-html/popper.min.js"></script>
+<script src="RUD_readme_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="RUD_readme_files/libs/quarto-html/anchor.min.js"></script>
+<link href="RUD_readme_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="RUD_readme_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="RUD_readme_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="RUD_readme_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="RUD_readme_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="data-file-information" class="level2">
+<h2 class="anchored" data-anchor-id="data-file-information">Data File Information</h2>
+<p>Data for the competition has been aggregated into a single file from multiple test items. For this challenge you will be using items from the grade 4 and grade 8 NAEP Math Assessments that were administered in 2017 and 2019. Information about the aggregated file and how it was prepared, along with general instructions for the challenge and data handling rules are contained below. Questions about the challenge should be posted to the Github “issues” page for the challenge: <a href="https://github.com/naep-as-challenge" class="uri">https://github.com/naep-as-challenge</a></p>
+</section>
+<section id="variables-common-to-all-items" class="level2">
+<h2 class="anchored" data-anchor-id="variables-common-to-all-items">Variables Common to All Items</h2>
+<p>Some variables about the item, responses, and respondent were available for all items in the source data. Those variables are described in the table below.</p>
+<table class="table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 33%">
+<col style="width: 2%">
+<col style="width: 58%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Values (if constrained)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">student_id</td>
+<td style="text-align: left;">pseudonymous student ID – not linkable across item-years</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">e.g.&nbsp;“xYzq4StVaC”</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">accession</td>
+<td style="text-align: left;">Item number</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">e.g.&nbsp;“VH139087”</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">score_to_predict</td>
+<td style="text-align: left;">Outcome to predict</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">e.g.&nbsp;1, 2, 3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">predict_from</td>
+<td style="text-align: left;">Text related to “score_to_predict”</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">“Because A&gt;B”</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">year</td>
+<td style="text-align: left;">Year assessment was administered</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">2017, or 2019</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">srace10</td>
+<td style="text-align: left;">Student’s race reported by the school</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">(1=‘White, not Hispanic’, 2=‘Afric Amer, not Hisp’, 3=‘Hispanic of any race’, 4=‘Asian, not Hispanic’, 5=‘Amer Ind/Alaska Nat’, 6=‘Native Ha/Pac Island’, 7=‘&gt;1 race, not Hispanic’)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">dsex</td>
+<td style="text-align: left;">Student’s sex</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">1=male, 2=female</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">accom2</td>
+<td style="text-align: left;">Student accommodations. Note: Item VH304954 did not have accom2 so for this item accom2 is entirely NA.</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">1=‘Accommodated’, 2=‘Not accommodated’</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">iep</td>
+<td style="text-align: left;">IEP</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">1=SD, 2=Not SD</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">lep</td>
+<td style="text-align: left;">English learner status</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">1=English Learner, 2=Not English Learner</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">rater_1</td>
+<td style="text-align: left;">Score given by human rater (component-scored items only)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">e.g.&nbsp;1A, 2B, 3A …</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pta_rtr1</td>
+<td style="text-align: left;">Part A human rater score (composite items only)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">e.g.&nbsp;1, 2A, 2, 3A …</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ptb_rtr1</td>
+<td style="text-align: left;">Part B human rater score (composite items only)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">e.g.&nbsp;1, 2A, 2, 3A …</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ptc_rtr1</td>
+<td style="text-align: left;">Part C human rater score (composite items only)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">e.g.&nbsp;1, 2A, 2, 3A …</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">composite</td>
+<td style="text-align: left;">Composite score (atomic-scored items only)</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">e.g.&nbsp;1, 2, 3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">score</td>
+<td style="text-align: left;">Score (containing partial credit codes)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">e.g.&nbsp;1A, 2B, 3A …</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">assigned_score</td>
+<td style="text-align: left;">Simplified numeric score total for item (1, 2, 3…) from either “rater_1” or “composite”</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">1, 2, 3 …</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ee_use</td>
+<td style="text-align: left;">Item used equation editor</td>
+<td style="text-align: left;">integer</td>
+<td style="text-align: left;">0=no EE use, 1=EE use</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="data-processing-information" class="level2">
+<h2 class="anchored" data-anchor-id="data-processing-information">Data Processing Information</h2>
+<p>There are four “Type II” items which were composed of multiple sub-items or parts that each have their own set of scores and response fields. For the purpose of the challenge, participants are requested to score the combined overall score (<code>score_to_predict</code>), based on the constructed response component which we believe is the most salient (<code>predict_from</code>), using NLP. For the six other items, called “Type I” items here, there are multiple parts within an item; however, these parts are considered dependently linked portions of the item and, as such, were assigned a single score that encompasses the responses contained within both parts.</p>
+<p>For the “Type II” items, the sub-item scores have been combined into a single “assigned_score” variable which is described in the common variables table above. The original part scores are also included and can be decoded using the item scoring guides provided in “<a href="data/Item%20information.zip"><em>Item information.zip</em></a>” which will be provided to participants with the responses upon approval of the data application.</p>
+<p>Note that this composite variable is <em>not</em> always the outcome which contestants should predict. To make it clear which outcome contestants should predict, we’ve created a variable “<code>score_to_predict</code>” which is the field which will be used as the outcome variable to create predicted scores for. We’ve also created a variable named “<code>predict_from</code>” to identify the text with the most relevant constructed response text to use when creating predicted scores.</p>
+<p>The original item data contained extended constructed response and short constructed response (ECR and CR) text, item selections for multiple choice, and some process data (such as response “eliminations” for CR items) embedded within a json data structure, with MathML (XML) equation editor codes nested inside. The original test item data had different XML structures for each item, and within item there are differences in the XML coding between the year of administration. <strong>These differences may impact how predictive models will perform across years.</strong></p>
+<p>These data have been parsed to make them easier to process. The parsed XML data, in contrast to the common variables listed above, are different for each item. The item specific variables are described below the item name in the list that follows. Please note, the format of the data values for the process data (e.g.&nbsp;eliminations) may differ by year for the same item. For example, eliminations may be recorded as “(1, 2, 5)” in 2017 and “1, 2, 5” in 2019.</p>
+<p>Also note, the CR text has been parsed but not completely cleaned. The data was analyzed for sensitive information (e.g.&nbsp;personally-identifiable information, profanity, toxic language) and some responses were removed as a result. However, spellcheck has not been applied to correct what may be obvious spelling errors.</p>
+</section>
+<section id="variables-with-different-meanings-for-each-item" class="level2">
+<h2 class="anchored" data-anchor-id="variables-with-different-meanings-for-each-item">Variables with different meanings for each item</h2>
+<p>Please consult the scoring guides included in “<a href="data/Item%20information.zip"><em>Item information.zip</em></a>” to map the fields below to the question areas.</p>
+<section id="for-item-vh134067" class="level4">
+<h4 class="anchored" data-anchor-id="for-item-vh134067">For item VH134067</h4>
+<p><strong>parsed_xml_v1</strong>– Text for ECR item response. <br> <br></p>
+</section>
+<section id="for-item-vh139380" class="level4">
+<h4 class="anchored" data-anchor-id="for-item-vh139380">For item VH139380</h4>
+<p><strong>parsed_xml_v1</strong>– SCR text <br><br>
+<strong>parsed_xml_v2</strong>– ECR text <br> <br></p>
+</section>
+<section id="for-item-vh266015" class="level4">
+<h4 class="anchored" data-anchor-id="for-item-vh266015">For item VH266015</h4>
+<p><strong>source1</strong>– drag and drop tile “from” <br><br>
+<strong>source2</strong>– drag and drop tile “from” <br><br>
+<strong>source3</strong>– drag and drop tile “from” <br><br>
+<strong>source4</strong>– drag and drop tile “from” <br><br>
+<strong>target1</strong>– drag and drop tile “to” <br><br>
+<strong>target2</strong>– drag and drop tile “to” <br><br>
+<strong>target3</strong>– drag and drop tile “to” <br><br>
+<strong>target4</strong>– drag and drop tile “to” <br><br>
+<strong>parsed_xml_v1</strong>– CR text <br> <br></p>
+</section>
+<section id="for-item-vh266510" class="level4">
+<h4 class="anchored" data-anchor-id="for-item-vh266510">For item VH266510</h4>
+<p><strong>parsed_xml_v1</strong>– ECR text <br><br>
+<strong>selected</strong>– MC radio button choices as a logical vector (e.g.&nbsp;“FALSE FALSE TRUE FALSE”) for 2019 only. <br><br>
+<strong>eliminations</strong>– MC item eliminations as a variable length numeric vector (e.g., c(1,3,4)) for 2017 only. <br><br>
+<strong>eliminated</strong>– MC item eliminations as a length 4 logical vector (e.g., TRUE FALSE FALSE TRUE) for 2019 only. <br> <br></p>
+</section>
+<section id="for-item-vh269384" class="level4">
+<h4 class="anchored" data-anchor-id="for-item-vh269384">For item VH269384</h4>
+<p><strong>selected1</strong>– 1st MC item option radio button 1 <br><br>
+<strong>selected2</strong>– 1st MC item option radio button 2 <br><br>
+<strong>selected3</strong>– 1st MC item option radio button 3 <br><br>
+<strong>selected4</strong>– 1st MC item option radio button 4 <br><br>
+<strong>selected1.1</strong>– 2nd MC item option radio button 1 <br><br>
+<strong>selected2.1</strong>– 2nd MC item option radio button 2 <br><br>
+<strong>eliminated1</strong>– 1st MC item elimination option radio button 1 <br><br>
+<strong>eliminated2</strong>– 1st MC item elimination option radio button 2 <br><br>
+<strong>eliminated3</strong>– 1st MC item elimination option radio button 3 <br><br>
+<strong>eliminated4</strong>– 1st MC item elimination option radio button 4 <br><br>
+<strong>eliminated1.1</strong>– 2nd MC item elimination option radio button 1 <br><br>
+<strong>eliminated2.1</strong>– 2nd MC item elimination option radio button 2 <br><br>
+<strong>parsed_xml_v1</strong>– ECR text <br> <br></p>
+</section>
+<section id="for-item-vh271613" class="level4">
+<h4 class="anchored" data-anchor-id="for-item-vh271613">For item VH271613</h4>
+<p><strong>partA_response_val</strong>– 1st MC item drop down menu selections as numeric vector (e.g.&nbsp;c(“1”,“1”)) in 2017, and a fixed length logical vector in 2019. <br><br>
+<strong>partB_response_val</strong>– 2nd MC item radio button selections as vector (e.g.&nbsp;c(“1”,““)) in 2017, and a fixed length logical vector in 2019. <br><br>
+<strong>partB_eliminations</strong>– MC item eliminations for part B, format differs by year. <br><br>
+<strong>parsed_xml_v1</strong>– ECR text <br><br>
+<em>Note</em>– For both the response values and the eliminations, the format of the data changes between 2017 and 2019. In 2017, eliminations are stored as list of numbers, perhaps in chronological order (e.g.,”1”, “2”, but also “2–1” and “1–2”). In 2019 the responses and eliminations are stored as fixed length logical vectors (e.g., “TRUE TRUE”). <br> <br></p>
+</section>
+<section id="for-item-vh302907" class="level4">
+<h4 class="anchored" data-anchor-id="for-item-vh302907">For item VH302907</h4>
+<p><strong>parsed_xml_v1</strong>– ECR text <br><br>
+<strong>parsed_xml_v2</strong>– CR text <br><br>
+<strong>parsed_xml_v3</strong>– CR text <br> <br></p>
+</section>
+<section id="for-item-vh304954" class="level4">
+<h4 class="anchored" data-anchor-id="for-item-vh304954">For item VH304954</h4>
+<p><strong>parsed_xml_v1</strong>– CR text <br><br>
+<strong>parsed_xml_v2</strong>– CR text <br> <br></p>
+</section>
+<section id="for-item-vh507804" class="level4">
+<h4 class="anchored" data-anchor-id="for-item-vh507804">For item VH507804</h4>
+<p><strong>source1</strong>– drag and drop tile “from” <br><br>
+<strong>source2</strong>– drag and drop tile “from” <br><br>
+<strong>source3</strong>– drag and drop tile “from” <br><br>
+<strong>target1</strong>– drag and drop tile “to” <br><br>
+<strong>target2</strong>– drag and drop tile “to” <br><br>
+<strong>target3</strong>– drag and drop tile “to” <br><br>
+<strong>parsed_xml_v1</strong>– CR text <br> <br></p>
+</section>
+<section id="for-item-vh525628" class="level4">
+<h4 class="anchored" data-anchor-id="for-item-vh525628">For item VH525628</h4>
+<p><strong>source1</strong>– drag and drop tile “from” <br><br>
+<strong>source2</strong>– drag and drop tile “from” <br><br>
+<strong>source3</strong>– drag and drop tile “from” <br><br>
+<strong>source4</strong>– drag and drop tile “from” <br><br>
+<strong>target1</strong>– drag and drop tile “to” <br><br>
+<strong>target2</strong>– drag and drop tile “to” <br><br>
+<strong>target3</strong>– drag and drop tile “to” <br><br>
+<strong>target4</strong>– drag and drop tile “to” <br><br>
+<strong>parsed_xml_v1</strong>– CR text <br></p>
+</section>
+</section>
+<section id="information-about-constructed-response-fields" class="level2">
+<h2 class="anchored" data-anchor-id="information-about-constructed-response-fields">Information about constructed response fields</h2>
+<p>Many items include one or more constructed response. While many of these are short, non-textual responses like equations, the following plots provide some information about the distribution of word and character counts found in the these responses. <br><br>
+<br></p>
+<p><img src="files_for_readme/word_count_boxplot.png" alt="Word count (excluding numbers and symbols)" style="width:80.0%"> <br><br>
+<img src="files_for_readme/word_count_wmaths_boxplot.png" alt="Word count with numbers and symbols" style="width:80.0%"> <br></p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
