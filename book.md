@@ -437,6 +437,7 @@ The training dataset will be provided first and then a test dataset
 (with responses only) will be provided **one week** before the challenge
 deadline. Detailed information about responses included for each item is
 provided in the "Variables with different meanings for each item"
+<<<<<<< HEAD
 section below and in the scoring guides included in the "[*Item
 information.zip*](resources/Item%20information.zip)" file.
 
@@ -488,6 +489,9 @@ information.zip*](resources/Item%20information.zip)" file.
 | VH525628 | 2019 |   8   | test  |      1       |    981 |
 
 Item information
+=======
+section below and in the scoring guides included in the `Item information.zip` file.
+>>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 
 ## Data File Information
 
@@ -507,29 +511,33 @@ for all items in the source data. Those variables are described in the
 table below.
 
 | Variable         | Description                                                                                             | Type    | Values (if constrained)                                                                                                                                                               |
+<<<<<<< HEAD
 |:-----------------|:-----------------|:-----------------|:------------------|
 | student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
+=======
+|:-----------------|:--------------------------------------------------------------------------------------------------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
+| accession        | Item number                                                                                             | string  | e.g. "VH139087"                                                                                                                                                                       |
+| score_to_predict | Outcome to predict                                                                                      | integer | e.g. 1, 2, 3                                                                                                                                                                          |
+| predict_from     | Text related to "score_to_predict"                                                                      | string  | "Because A\>B"                                                                                                                                                                        |
+>>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 | year             | Year assessment was administered                                                                        | integer | 2017, or 2019                                                                                                                                                                         |
-| blockcode        | NAEP item block identifier                                                                              | string  | example "1717MA1N05CLID30EX"                                                                                                                                                          |
-| accession        | Item number                                                                                             | string  | e.g. "VH139087"                                                                                                                                                                       |
 | srace10          | Student's race reported by the school                                                                   | string  | (1='White, not Hispanic', 2='Afric Amer, not Hisp', 3='Hispanic of any race', 4='Asian, not Hispanic', 5='Amer Ind/Alaska Nat', 6='Native Ha/Pac Island', 7='\>1 race, not Hispanic') |
 | dsex             | Student's sex                                                                                           | integer | 1=male, 2=female                                                                                                                                                                      |
 | accom2           | Student accommodations. Note: Item VH304954 did not have accom2 so for this item accom2 is entirely NA. | integer | 1='Accommodated', 2='Not accommodated'                                                                                                                                                |
-| lep              | English learner status                                                                                  | integer | 1=English Learner, 2=Not English Learner                                                                                                                                              |
 | iep              | IEP                                                                                                     | integer | 1=SD, 2=Not SD                                                                                                                                                                        |
-| rater_1          | Score given by human rater                                                                              | string  | e.g. 1A, 2B, 3A ...                                                                                                                                                                   |
+| lep              | English learner status                                                                                  | integer | 1=English Learner, 2=Not English Learner                                                                                                                                              |
+| rater_1          | Score given by human rater (component-scored items only)                                                | string  | e.g. 1A, 2B, 3A …                                                                                                                                                                     |
+| pta_rtr1         | Part A human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A …                                                                                                                                                                   |
+| ptb_rtr1         | Part B human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A …                                                                                                                                                                   |
+| ptc_rtr1         | Part C human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A …                                                                                                                                                                   |
+| composite        | Composite score (atomic-scored items only)                                                              | integer | e.g. 1, 2, 3                                                                                                                                                                          |
+| score            | Score (containing partial credit codes)                                                                 | string  | e.g. 1A, 2B, 3A …                                                                                                                                                                     |
+| assigned_score   | Simplified numeric score total for item (1, 2, 3...) from either "rater_1" or "composite"               | integer | 1, 2, 3 …                                                                                                                                                                             |
 | ee_use           | Item used equation editor                                                                               | integer | 0=no EE use, 1=EE use                                                                                                                                                                 |
-| score            | Score (containing partial credit codes)                                                                 | string  | e.g. 1A, 2B, 3A ...                                                                                                                                                                   |
-| assigned_score   | Simplified numeric score total for item (1, 2, 3...)                                                    | integer | 1, 2, 3 ...                                                                                                                                                                           |
-| pta_rtr1         | Part A human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
-| ptb_rtr1         | Part B human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
-| ptc_rtr1         | Part C human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
-| composite        | Composite score (composite items only)                                                                  | integer | e.g. 1, 2, 3                                                                                                                                                                          |
-| score_to_predict | Outcome to predict                                                                                      | integer | e.g. 1, 2, 3                                                                                                                                                                          |
-| predict_from     | Text related to "score_to_predict"                                                                      | string  | "Because A\>B"                                                                                                                                                                        |
 
-Variables that are common across all items
 
+<<<<<<< HEAD
 ## Item Classification & Dataset Processing
 
 We have classified the 10 items into "Type 1" and "Type 2" for the
@@ -566,6 +574,34 @@ parts in their scoring model to improve performance.\
 [INSERT TEXT RE: HUMAN SCORING HERE]
 
 ### Dataset processing
+=======
+## Data Processing Information
+
+There are four "Type II" items which were composed of multiple
+sub-items or parts that each have their own set of scores and response
+fields. For the purpose of the challenge, participants are requested to
+score the combined overall score (`score_to_predict`), based on the constructed response component which 
+we believe is the most salient (`predict_from`), using NLP. For the six other items, called "Type I"
+items here, there are multiple parts within an item; however, these
+parts are considered dependently linked portions of the item and, as
+such, were assigned a single score that encompasses the responses
+contained within both parts.
+
+For the "Type II" items, the sub-item scores have been combined
+into a single "assigned_score" variable which is described in the common
+variables table above. The original part scores are also included and
+can be decoded using the item scoring guides provided in `Item information.zip` 
+which will be provided to participants with the responses upon approval of the 
+data application.
+
+Note that this composite variable is *not* always the outcome which
+contestants should predict. To make it clear which outcome contestants
+should predict, we've created a variable "`score_to_predict`" which is
+the field which will be used as the outcome variable to create predicted
+scores for. We've also created a variable named "`predict_from`" to
+identify the text with the most relevant constructed response text to
+use when creating predicted scores.
+>>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 
 The original item data contained extended constructed response and short
 constructed response (ECR and CR) text, item selections for multiple
@@ -629,9 +665,8 @@ Inter-rater reliability, by item
 
 ## Variables with different meanings for each item
 
-Please consult the scoring guides included in "[*Item
-information.zip*](data/Item%20information.zip)" to map the fields below
-to the question areas.
+Please consult the scoring guides included in `Item information.zip` to 
+map the fields below to the question areas.
 
 #### For item VH134067
 
@@ -658,7 +693,7 @@ to the question areas.
 
 **parsed_xml_v1**-- ECR text <br>\
 **selected**-- MC radio button choices as a logical vector (e.g. "FALSE
-FALSE TRUE FALSE"). $$Only available for 2019.$$ <br>\
+FALSE TRUE FALSE") for 2019 only. <br>\
 **eliminations**-- MC item eliminations as a variable length numeric
 vector (e.g., c(1,3,4)) for 2017 only. <br>\
 **eliminated**-- MC item eliminations as a length 4 logical vector
@@ -731,6 +766,43 @@ are stored as fixed length logical vectors (e.g., "TRUE TRUE"). <br>
 **target4**-- drag and drop tile "to" <br>\
 **parsed_xml_v1**-- CR text <br>
 
+<<<<<<< HEAD
+=======
+## Information about constructed response field
+
+The following plots provide information about the distribution of word counts for 
+the `predict_from` constructed reponse field. <br>\
+<br>
+
+<img src="files_for_readme/word_count_boxplot.png" alt="Word count (excluding numbers and symbols)" style="width:80.0%"/>
+<br>\
+<img src="files_for_readme/word_count_wmaths_boxplot.png" alt="Word count with numbers and symbols" style="width:80.0%"/>
+<br>
+
+## Inter-rater Reliability
+
+Approximately 5% of the NAEP item responses were double scored.
+Quadradic Weighted Kappa (QWK) was calculated to estimate the
+inter-rater reliability for the double-scored responses. The inter-rater
+reliability estimates for all items are presented below.
+
+Table: N Counts for Test/Train Split
+
+|item     |  QWK | score type |
+|:--------|:----:|:----------:|
+|VH134067 | 0.966| Type I     |
+|VH139380 | 0.981| Type I     |
+|VH266015 | 0.963| Type II    |
+|VH266510 | 0.933| Type I     |
+|VH269384 | 0.970| Type II    |
+|VH271613 | 0.975| Type II    |
+|VH302907 | 0.980| Type I     |
+|VH304954 | 0.984| Type I     |
+|VH507804 | 0.991| Type II    |
+|VH525628 | 0.956| Type I     |
+
+
+>>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 ## Suppression
 
 To minimize the risk of statistical disclosure, suppression was applied
@@ -741,33 +813,28 @@ the order in which they were prioritized, were the following: "dsex",
 "iep", "accom2", "lep", and "srace10". The variable "year" was *not*
 included in the suppression. <br>
 
-There were 216 groups formed by the cross-tabulation of the suppression
-variables ("dsex", "iep", "accom2", "lep", "srace10") of which 49 fell
-below the suppression threshold of N=5. There were 87 students included
-in the 49 groups to which suppression were applied, out of 301,894
-students in total. After applying the suppression algorithm, there were
-177 groups formed by the cross-tabulation of the suppression variables.
-<br>
 
 ## Item Splits
 
 The table that follows shows the N counts for the test and training data
 sets. <br>
 
-|   Item   |  QWK  | Min Score | Max Score | Test N | Train N |    Score Type    |
-|:--------:|:-----:|----------:|:---------:|:------:|--------:|:----------------:|
-| VH134067 | 0.966 |         1 |     2     | 4,483  |  40,346 | component-scored |
-| VH139380 | 0.981 |         1 |     3     | 2,045  |  18,404 | component-scored |
-| VH266015 | 0.963 |         1 |     4     | 1,927  |  17,340 | component-scored |
-| VH266510 | 0.933 |         1 |     3     | 4,502  |  40,518 | component-scored |
-| VH269384 | 0.970 |         1 |     4     | 1,966  |  17,695 |  atomic-scored   |
-| VH271613 | 0.977 |         1 |     4     | 4,175  |  37,579 |  atomic-scored   |
-| VH302907 | 0.980 |         1 |     2     | 4,357  |  39,210 | component-scored |
-| VH304954 | 0.985 |         1 |     3     | 2,790  |  25,107 | component-scored |
-| VH507804 | 0.991 |         1 |     4     | 2,000  |  17,995 |  atomic-scored   |
-| VH525628 | 0.957 |         1 |     3     | 1,946  |  17,509 |  atomic-scored   |
+Table: N Counts for Test/Train Split
 
-N Counts for test and train split files
+|item     |  QWK | min| max| test | train |score type |
+|:--------|-----:|---:|---:|-----:|------:|:---------:|
+|VH134067 | 0.966| 1  | 2  | 4,483| 40,343| Type I    |
+|VH139380 | 0.981| 1  | 3  | 2,018| 18,157| Type I    |
+|VH266015 | 0.963| 1  | 4  | 1,776| 15,987| Type II   |
+|VH266510 | 0.933| 1  | 3  | 4,296| 38,667| Type I    |
+|VH269384 | 0.970| 1  | 4  | 1,758| 15,826| Type II   |
+|VH271613 | 0.975| 1  | 4  | 3,096| 27,858| Type II   |
+|VH302907 | 0.980| 1  | 2  | 4,241| 38,173| Type I    |
+|VH304954 | 0.984| 1  | 3  | 2,743| 24,686| Type I    |
+|VH507804 | 0.991| 1  | 4  | 1,827| 16,443| Type II   |
+|VH525628 | 0.956| 1  | 3  | 1,808| 16,275| Type I    |
+
+<!-- cb-air: Is the "evaluation criteria" line below supposed to display as it does? -->
 
 <a id="evaluation"></a>
 
@@ -1321,29 +1388,29 @@ the training data follow. <br>
 
 ### Response Percentages
 
-<img src="files_for_readme/doublescored_pct_VH134067_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_pct_VH139380_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_pct_VH266015_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_pct_VH266510_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_pct_VH269384_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_pct_VH271613_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_pct_VH302907_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_pct_VH304954_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_pct_VH507804_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_pct_VH525628_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_pct_VH134067_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_pct_VH139380_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_pct_VH266015_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_pct_VH266510_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_pct_VH269384_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_pct_VH271613_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_pct_VH302907_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_pct_VH304954_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_pct_VH507804_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_pct_VH525628_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
 
 ### Response Counts
 
-<img src="files_for_readme/doublescored_VH134067_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_VH139380_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_VH266015_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_VH266510_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_VH269384_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_VH271613_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_VH302907_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_VH304954_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_VH507804_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
-<img src="files_for_readme/doublescored_VH525628_plots_90_10_byValue2023-02-10.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_VH134067_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_VH139380_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_VH266015_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_VH266510_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_VH269384_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_VH271613_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_VH302907_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_VH304954_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_VH507804_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_VH525628_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
 
 <a id="references"></a> \# References
 
