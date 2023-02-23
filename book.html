@@ -230,7 +230,7 @@ Shermis, Mark D. 2014. “State-of-the-Art Automated Essay Scoring: Competition,
 <h2 class="anchored" data-anchor-id="dataset-description">Dataset Description</h2>
 <p>Participants will be provided access to digital files that contain information related to the assessment items, the scoring guides used to train human raters, and response data that includes XML-formatted text, human assigned scores, and demographic information about the respondent. The responses correspond to items which assess student knowledge and ability in a variety of content areas and complexity levels.</p>
 <p>Information for 10 items will be provided for this challenge and eligible entries will provide predicted scores for every student response. These items have been reviewed to ensure that the content is appropriate to natural language processing (e.g.&nbsp;“explain your answer”) and that there is sufficient distribution of responses to provide a meaningful prediction challenge. The data will be split into a training dataset and a test dataset.</p>
-<p>The training dataset will be provided first and then a test dataset (with responses only) will be provided <strong>one week</strong> before the challenge deadline. Detailed information about responses included for each item is provided in the “Variables with different meanings for each item” section below and in the scoring guides included in the “<a href="data/Item%20information.zip"><em>Item information.zip</em></a>” file.</p>
+<p>The training dataset will be provided first and then a test dataset (with responses only) will be provided <strong>one week</strong> before the challenge deadline. Detailed information about responses included for each item is provided in the “Variables with different meanings for each item” section below and in the scoring guides included in the <code>Item information.zip</code> file.</p>
 </section>
 <section id="data-file-information" class="level2">
 <h2 class="anchored" data-anchor-id="data-file-information">Data File Information</h2>
@@ -369,7 +369,7 @@ Shermis, Mark D. 2014. “State-of-the-Art Automated Essay Scoring: Competition,
 <section id="data-processing-information" class="level2">
 <h2 class="anchored" data-anchor-id="data-processing-information">Data Processing Information</h2>
 <p>There are four “Type II” items which were composed of multiple sub-items or parts that each have their own set of scores and response fields. For the purpose of the challenge, participants are requested to score the combined overall score (<code>score_to_predict</code>), based on the constructed response component which we believe is the most salient (<code>predict_from</code>), using NLP. For the six other items, called “Type I” items here, there are multiple parts within an item; however, these parts are considered dependently linked portions of the item and, as such, were assigned a single score that encompasses the responses contained within both parts.</p>
-<p>For the “Type II” items, the sub-item scores have been combined into a single “assigned_score” variable which is described in the common variables table above. The original part scores are also included and can be decoded using the item scoring guides provided in “<a href="data/Item%20information.zip"><em>Item information.zip</em></a>” which will be provided to participants with the responses upon approval of the data application.</p>
+<p>For the “Type II” items, the sub-item scores have been combined into a single “assigned_score” variable which is described in the common variables table above. The original part scores are also included and can be decoded using the item scoring guides provided in <code>Item information.zip</code> which will be provided to participants with the responses upon approval of the data application.</p>
 <p>Note that this composite variable is <em>not</em> always the outcome which contestants should predict. To make it clear which outcome contestants should predict, we’ve created a variable “<code>score_to_predict</code>” which is the field which will be used as the outcome variable to create predicted scores for. We’ve also created a variable named “<code>predict_from</code>” to identify the text with the most relevant constructed response text to use when creating predicted scores.</p>
 <p>The original item data contained extended constructed response and short constructed response (ECR and CR) text, item selections for multiple choice, and some process data (such as response “eliminations” for CR items) embedded within a json data structure, with MathML (XML) equation editor codes nested inside. The original test item data had different XML structures for each item, and within item there are differences in the XML coding between the year of administration. <strong>These differences may impact how predictive models will perform across years.</strong></p>
 <p>These data have been parsed to make them easier to process. The parsed XML data, in contrast to the common variables listed above, are different for each item. The item specific variables are described below the item name in the list that follows. Please note, the format of the data values for the process data (e.g.&nbsp;eliminations) may differ by year for the same item. For example, eliminations may be recorded as “(1, 2, 5)” in 2017 and “1, 2, 5” in 2019.</p>
@@ -377,7 +377,7 @@ Shermis, Mark D. 2014. “State-of-the-Art Automated Essay Scoring: Competition,
 </section>
 <section id="variables-with-different-meanings-for-each-item" class="level2">
 <h2 class="anchored" data-anchor-id="variables-with-different-meanings-for-each-item">Variables with different meanings for each item</h2>
-<p>Please consult the scoring guides included in “<a href="data/Item%20information.zip"><em>Item information.zip</em></a>” to map the fields below to the question areas.</p>
+<p>Please consult the scoring guides included in <code>Item information.zip</code> to map the fields below to the question areas.</p>
 <section id="for-item-vh134067" class="level4">
 <h4 class="anchored" data-anchor-id="for-item-vh134067">For item VH134067</h4>
 <p><strong>parsed_xml_v1</strong>– Text for ECR item response. <br> <br></p>
@@ -464,9 +464,9 @@ Shermis, Mark D. 2014. “State-of-the-Art Automated Essay Scoring: Competition,
 <strong>parsed_xml_v1</strong>– CR text <br></p>
 </section>
 </section>
-<section id="information-about-constructed-response-fields" class="level2">
-<h2 class="anchored" data-anchor-id="information-about-constructed-response-fields">Information about constructed response fields</h2>
-<p>Many items include one or more constructed response. While many of these are short, non-textual responses like equations, the following plots provide some information about the distribution of word and character counts found in the these responses. <br><br>
+<section id="information-about-constructed-response-field" class="level2">
+<h2 class="anchored" data-anchor-id="information-about-constructed-response-field">Information about constructed response field</h2>
+<p>The following plots provide information about the distribution of word counts for the <code>predict_from</code> constructed reponse field. <br><br>
 <br></p>
 <p><img src="files_for_readme/word_count_boxplot.png" alt="Word count (excluding numbers and symbols)" style="width:80.0%"> <br><br>
 <img src="files_for_readme/word_count_wmaths_boxplot.png" alt="Word count with numbers and symbols" style="width:80.0%"> <br></p>

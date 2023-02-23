@@ -437,8 +437,7 @@ The training dataset will be provided first and then a test dataset
 (with responses only) will be provided **one week** before the challenge
 deadline. Detailed information about responses included for each item is
 provided in the "Variables with different meanings for each item"
-section below and in the scoring guides included in the "[*Item
-information.zip*](data/Item%20information.zip)" file.
+section below and in the scoring guides included in the `Item information.zip` file.
 
 ## Data File Information
 
@@ -494,10 +493,9 @@ contained within both parts.
 For the "Type II" items, the sub-item scores have been combined
 into a single "assigned_score" variable which is described in the common
 variables table above. The original part scores are also included and
-can be decoded using the item scoring guides provided in "[*Item
-information.zip*](data/Item%20information.zip)" which will be provided
-to participants with the responses upon approval of the data
-application.
+can be decoded using the item scoring guides provided in `Item information.zip` 
+which will be provided to participants with the responses upon approval of the 
+data application.
 
 Note that this composite variable is *not* always the outcome which
 contestants should predict. To make it clear which outcome contestants
@@ -532,9 +530,8 @@ been applied to correct what may be obvious spelling errors.
 
 ## Variables with different meanings for each item
 
-Please consult the scoring guides included in "[*Item
-information.zip*](data/Item%20information.zip)" to map the fields below
-to the question areas.
+Please consult the scoring guides included in `Item information.zip` to 
+map the fields below to the question areas.
 
 #### For item VH134067
 
@@ -634,12 +631,10 @@ are stored as fixed length logical vectors (e.g., "TRUE TRUE"). <br>
 **target4**-- drag and drop tile "to" <br>\
 **parsed_xml_v1**-- CR text <br>
 
-## Information about constructed response fields
+## Information about constructed response field
 
-Many items include one or more constructed response. While many of these
-are short, non-textual responses like equations, the following plots
-provide some information about the distribution of word and character
-counts found in the these responses. <br>\
+The following plots provide information about the distribution of word counts for 
+the `predict_from` constructed reponse field. <br>\
 <br>
 
 <img src="files_for_readme/word_count_boxplot.png" alt="Word count (excluding numbers and symbols)" style="width:80.0%"/>
