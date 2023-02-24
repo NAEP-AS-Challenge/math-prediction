@@ -444,7 +444,7 @@ data was analyzed for sensitive information
 and some responses were removed as a result. However, spellcheck has not
 been applied to correct what may be obvious spelling errors.
 
-## Information about constructed response field
+## Response length for constructed response fields
 
 The following plots provide information about the distribution of word counts for 
 the `predict_from` constructed reponse field. <br>\
@@ -452,124 +452,6 @@ the `predict_from` constructed reponse field. <br>\
 
 <img src="files_for_readme/word_count_boxplot.png" alt="Word count (excluding numbers and symbols)" style="width:80.0%"/>
 <br>
-<img src="files_for_readme/word_count_wmaths_boxplot.png" alt="Word count with numbers and symbols" style="width:80.0%"/>
-<br>
-
-
-## Variables with different meanings for each item
-
-Please consult the scoring guides included in "[*Item
-information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)" to 
-map the fields below to the question areas.
-
-#### For item VH134067
-
-**parsed_xml_v1**-- Text for ECR item response. <br> <br>
-
-#### For item VH139380
-
-**parsed_xml_v1**-- SCR text <br>\
-**parsed_xml_v2**-- ECR text <br> <br>
-
-#### For item VH266015
-
-**source1**-- drag and drop tile "from" <br>\
-**source2**-- drag and drop tile "from" <br>\
-**source3**-- drag and drop tile "from" <br>\
-**source4**-- drag and drop tile "from" <br>\
-**target1**-- drag and drop tile "to" <br>\
-**target2**-- drag and drop tile "to" <br>\
-**target3**-- drag and drop tile "to" <br>\
-**target4**-- drag and drop tile "to" <br>\
-**parsed_xml_v1**-- CR text <br> <br>
-
-#### For item VH266510
-
-**parsed_xml_v1**-- ECR text <br>\
-**selected**-- MC radio button choices as a logical vector (e.g. "FALSE
-FALSE TRUE FALSE") for 2019 only. <br>\
-**eliminations**-- MC item eliminations as a variable length numeric
-vector (e.g., c(1,3,4)) for 2017 only. <br>\
-**eliminated**-- MC item eliminations as a length 4 logical vector
-(e.g., TRUE FALSE FALSE TRUE) for 2019 only. <br> <br>
-
-#### For item VH269384
-
-**selected1**-- 1st MC item option radio button 1 <br>\
-**selected2**-- 1st MC item option radio button 2 <br>\
-**selected3**-- 1st MC item option radio button 3 <br>\
-**selected4**-- 1st MC item option radio button 4 <br>\
-**selected1.1**-- 2nd MC item option radio button 1 <br>\
-**selected2.1**-- 2nd MC item option radio button 2 <br>\
-**eliminated1**-- 1st MC item elimination option radio button 1 <br>\
-**eliminated2**-- 1st MC item elimination option radio button 2 <br>\
-**eliminated3**-- 1st MC item elimination option radio button 3 <br>\
-**eliminated4**-- 1st MC item elimination option radio button 4 <br>\
-**eliminated1.1**-- 2nd MC item elimination option radio button 1 <br>\
-**eliminated2.1**-- 2nd MC item elimination option radio button 2 <br>\
-**parsed_xml_v1**-- ECR text <br> <br>
-
-#### For item VH271613
-
-**partA_response_val**-- 1st MC item drop down menu selections as
-numeric vector (e.g. c("1","1")) in 2017, and a fixed length logical
-vector in 2019. <br>\
-**partB_response_val**-- 2nd MC item radio button selections as vector
-(e.g. c("1","")) in 2017, and a fixed length logical vector in 2019.
-<br>\
-**partB_eliminations**-- MC item eliminations for part B, format differs
-by year. <br>\
-**parsed_xml_v1**-- ECR text <br>\
-*Note*-- For both the response values and the eliminations, the format
-of the data changes between 2017 and 2019. In 2017, eliminations are
-stored as list of numbers, perhaps in chronological order (e.g.,"1",
-"2", but also "2--1" and "1--2"). In 2019 the responses and eliminations
-are stored as fixed length logical vectors (e.g., "TRUE TRUE"). <br>
-<br>
-
-#### For item VH302907
-
-**parsed_xml_v1**-- ECR text <br>\
-**parsed_xml_v2**-- CR text <br>\
-**parsed_xml_v3**-- CR text <br> <br>
-
-#### For item VH304954
-
-**parsed_xml_v1**-- CR text <br>\
-**parsed_xml_v2**-- CR text <br> <br>
-
-#### For item VH507804
-
-**source1**-- drag and drop tile "from" <br>\
-**source2**-- drag and drop tile "from" <br>\
-**source3**-- drag and drop tile "from" <br>\
-**target1**-- drag and drop tile "to" <br>\
-**target2**-- drag and drop tile "to" <br>\
-**target3**-- drag and drop tile "to" <br>\
-**parsed_xml_v1**-- CR text <br> <br>
-
-#### For item VH525628
-
-**source1**-- drag and drop tile "from" <br>\
-**source2**-- drag and drop tile "from" <br>\
-**source3**-- drag and drop tile "from" <br>\
-**source4**-- drag and drop tile "from" <br>\
-**target1**-- drag and drop tile "to" <br>\
-**target2**-- drag and drop tile "to" <br>\
-**target3**-- drag and drop tile "to" <br>\
-**target4**-- drag and drop tile "to" <br>\
-**parsed_xml_v1**-- CR text <br>
-
-## Suppression
-
-To minimize the risk of statistical disclosure, suppression was applied
-to demographic variables. To minimize the impact of suppression and
-algorithm was developed which prioritized which of the suppression
-variables were set to missing (NA). The suppression variables, listed in
-the order in which they were prioritized, were the following: "dsex",
-"iep", "accom2", "lep", and "srace10". The variable "year" was *not*
-included in the suppression. <br>
-
 
 
 <a id="evaluation"></a>
@@ -857,7 +739,9 @@ Participation in the prediction challenge and results that are within
 the 10 most accurate submissions is required for participation in the
 interpretability challenge.
 
-<a id="timeline"></a> Timeline ================
+<a id="timeline"></a> 
+
+## Timeline 
 
 | Activity                                   | Date                |
 |--------------------------------------------|---------------------|
@@ -1112,7 +996,7 @@ $$\frac{\mu_A - \mu_B}{\frac{(n_A -1) s_A^2 + (n_B -1)s_B^2}{n_A + n_B - 2}}$$
 where $\mu_X$ is the mean of group $X$, $n_X$ is the n-size for group
 $X$, and $s_A$ is the sample standard deviation for group $X$.
 
-## Response Distributions by Item
+## Appendix: Detailed Item Information 
 
 Histograms showings the distribution of variable values for each item in
 the training data follow. <br>
@@ -1148,3 +1032,119 @@ the training data follow. <br>
 <div>
 
 </div>
+
+### Variables with different meanings for each item
+
+Please consult the scoring guides included in "[*Item
+information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)" to 
+map the fields below to the question areas.
+
+#### For item VH134067
+
+**parsed_xml_v1**-- Text for ECR item response. <br> <br>
+
+#### For item VH139380
+
+**parsed_xml_v1**-- SCR text <br>\
+**parsed_xml_v2**-- ECR text <br> <br>
+
+#### For item VH266015
+
+**source1**-- drag and drop tile "from" <br>\
+**source2**-- drag and drop tile "from" <br>\
+**source3**-- drag and drop tile "from" <br>\
+**source4**-- drag and drop tile "from" <br>\
+**target1**-- drag and drop tile "to" <br>\
+**target2**-- drag and drop tile "to" <br>\
+**target3**-- drag and drop tile "to" <br>\
+**target4**-- drag and drop tile "to" <br>\
+**parsed_xml_v1**-- CR text <br> <br>
+
+#### For item VH266510
+
+**parsed_xml_v1**-- ECR text <br>\
+**selected**-- MC radio button choices as a logical vector (e.g. "FALSE
+FALSE TRUE FALSE") for 2019 only. <br>\
+**eliminations**-- MC item eliminations as a variable length numeric
+vector (e.g., c(1,3,4)) for 2017 only. <br>\
+**eliminated**-- MC item eliminations as a length 4 logical vector
+(e.g., TRUE FALSE FALSE TRUE) for 2019 only. <br> <br>
+
+#### For item VH269384
+
+**selected1**-- 1st MC item option radio button 1 <br>\
+**selected2**-- 1st MC item option radio button 2 <br>\
+**selected3**-- 1st MC item option radio button 3 <br>\
+**selected4**-- 1st MC item option radio button 4 <br>\
+**selected1.1**-- 2nd MC item option radio button 1 <br>\
+**selected2.1**-- 2nd MC item option radio button 2 <br>\
+**eliminated1**-- 1st MC item elimination option radio button 1 <br>\
+**eliminated2**-- 1st MC item elimination option radio button 2 <br>\
+**eliminated3**-- 1st MC item elimination option radio button 3 <br>\
+**eliminated4**-- 1st MC item elimination option radio button 4 <br>\
+**eliminated1.1**-- 2nd MC item elimination option radio button 1 <br>\
+**eliminated2.1**-- 2nd MC item elimination option radio button 2 <br>\
+**parsed_xml_v1**-- ECR text <br> <br>
+
+#### For item VH271613
+
+**partA_response_val**-- 1st MC item drop down menu selections as
+numeric vector (e.g. c("1","1")) in 2017, and a fixed length logical
+vector in 2019. <br>\
+**partB_response_val**-- 2nd MC item radio button selections as vector
+(e.g. c("1","")) in 2017, and a fixed length logical vector in 2019.
+<br>\
+**partB_eliminations**-- MC item eliminations for part B, format differs
+by year. <br>\
+**parsed_xml_v1**-- ECR text <br>\
+*Note*-- For both the response values and the eliminations, the format
+of the data changes between 2017 and 2019. In 2017, eliminations are
+stored as list of numbers, perhaps in chronological order (e.g.,"1",
+"2", but also "2--1" and "1--2"). In 2019 the responses and eliminations
+are stored as fixed length logical vectors (e.g., "TRUE TRUE"). <br>
+<br>
+
+#### For item VH302907
+
+**parsed_xml_v1**-- ECR text <br>\
+**parsed_xml_v2**-- CR text <br>\
+**parsed_xml_v3**-- CR text <br> <br>
+
+#### For item VH304954
+
+**parsed_xml_v1**-- CR text <br>\
+**parsed_xml_v2**-- CR text <br> <br>
+
+#### For item VH507804
+
+**source1**-- drag and drop tile "from" <br>\
+**source2**-- drag and drop tile "from" <br>\
+**source3**-- drag and drop tile "from" <br>\
+**target1**-- drag and drop tile "to" <br>\
+**target2**-- drag and drop tile "to" <br>\
+**target3**-- drag and drop tile "to" <br>\
+**parsed_xml_v1**-- CR text <br> <br>
+
+#### For item VH525628
+
+**source1**-- drag and drop tile "from" <br>\
+**source2**-- drag and drop tile "from" <br>\
+**source3**-- drag and drop tile "from" <br>\
+**source4**-- drag and drop tile "from" <br>\
+**target1**-- drag and drop tile "to" <br>\
+**target2**-- drag and drop tile "to" <br>\
+**target3**-- drag and drop tile "to" <br>\
+**target4**-- drag and drop tile "to" <br>\
+**parsed_xml_v1**-- CR text <br>
+
+## Suppression
+
+To minimize the risk of statistical disclosure, suppression was applied
+to demographic variables. To minimize the impact of suppression and
+algorithm was developed which prioritized which of the suppression
+variables were set to missing (NA). The suppression variables, listed in
+the order in which they were prioritized, were the following: "dsex",
+"iep", "accom2", "lep", and "srace10". The variable "year" was *not*
+included in the suppression. <br>
+
+
