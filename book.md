@@ -437,7 +437,6 @@ The training dataset will be provided first and then a test dataset
 (with responses only) will be provided **one week** before the challenge
 deadline. Detailed information about responses included for each item is
 provided in the "Variables with different meanings for each item"
-<<<<<<< HEAD
 section below and in the scoring guides included in the "[*Item
 information.zip*](resources/Item%20information.zip)" file.
 
@@ -489,9 +488,6 @@ information.zip*](resources/Item%20information.zip)" file.
 | VH525628 | 2019 |   8   | test  |      1       |    981 |
 
 Item information
-=======
-section below and in the scoring guides included in the `Item information.zip` file.
->>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 
 ## Data File Information
 
@@ -511,16 +507,11 @@ for all items in the source data. Those variables are described in the
 table below.
 
 | Variable         | Description                                                                                             | Type    | Values (if constrained)                                                                                                                                                               |
-<<<<<<< HEAD
-|:-----------------|:-----------------|:-----------------|:------------------|
-| student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
-=======
 |:-----------------|:--------------------------------------------------------------------------------------------------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
 | accession        | Item number                                                                                             | string  | e.g. "VH139087"                                                                                                                                                                       |
 | score_to_predict | Outcome to predict                                                                                      | integer | e.g. 1, 2, 3                                                                                                                                                                          |
 | predict_from     | Text related to "score_to_predict"                                                                      | string  | "Because A\>B"                                                                                                                                                                        |
->>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 | year             | Year assessment was administered                                                                        | integer | 2017, or 2019                                                                                                                                                                         |
 | srace10          | Student's race reported by the school                                                                   | string  | (1='White, not Hispanic', 2='Afric Amer, not Hisp', 3='Hispanic of any race', 4='Asian, not Hispanic', 5='Amer Ind/Alaska Nat', 6='Native Ha/Pac Island', 7='\>1 race, not Hispanic') |
 | dsex             | Student's sex                                                                                           | integer | 1=male, 2=female                                                                                                                                                                      |
@@ -537,7 +528,6 @@ table below.
 | ee_use           | Item used equation editor                                                                               | integer | 0=no EE use, 1=EE use                                                                                                                                                                 |
 
 
-<<<<<<< HEAD
 ## Item Classification & Dataset Processing
 
 We have classified the 10 items into "Type 1" and "Type 2" for the
@@ -574,34 +564,6 @@ parts in their scoring model to improve performance.\
 [INSERT TEXT RE: HUMAN SCORING HERE]
 
 ### Dataset processing
-=======
-## Data Processing Information
-
-There are four "Type II" items which were composed of multiple
-sub-items or parts that each have their own set of scores and response
-fields. For the purpose of the challenge, participants are requested to
-score the combined overall score (`score_to_predict`), based on the constructed response component which 
-we believe is the most salient (`predict_from`), using NLP. For the six other items, called "Type I"
-items here, there are multiple parts within an item; however, these
-parts are considered dependently linked portions of the item and, as
-such, were assigned a single score that encompasses the responses
-contained within both parts.
-
-For the "Type II" items, the sub-item scores have been combined
-into a single "assigned_score" variable which is described in the common
-variables table above. The original part scores are also included and
-can be decoded using the item scoring guides provided in `Item information.zip` 
-which will be provided to participants with the responses upon approval of the 
-data application.
-
-Note that this composite variable is *not* always the outcome which
-contestants should predict. To make it clear which outcome contestants
-should predict, we've created a variable "`score_to_predict`" which is
-the field which will be used as the outcome variable to create predicted
-scores for. We've also created a variable named "`predict_from`" to
-identify the text with the most relevant constructed response text to
-use when creating predicted scores.
->>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 
 The original item data contained extended constructed response and short
 constructed response (ECR and CR) text, item selections for multiple
@@ -626,20 +588,16 @@ data was analyzed for sensitive information
 and some responses were removed as a result. However, spellcheck has not
 been applied to correct what may be obvious spelling errors.
 
-## Information about constructed response fields
+## Information about constructed response field
 
-Many items include one or more constructed response. While many of these
-are short, non-textual responses like equations, the following plots
-provide some information about the distribution of word and character
-counts found in the these responses. <br>\
+The following plots provide information about the distribution of word counts for 
+the `predict_from` constructed reponse field. <br>\
 <br>
 
-![Word count (excluding numbers and
-symbols)](files_for_readme/word_count_boxplot.png){alt="Word count (excluding numbers and symbols)"
-style="width:80.0%"} <br>\
-![Word count with numbers and
-symbols](files_for_readme/word_count_wmaths_boxplot.png){alt="Word count with numbers and symbols"
-style="width:80.0%"} <br>
+<img src="files_for_readme/word_count_boxplot.png" alt="Word count (excluding numbers and symbols)" style="width:80.0%"/>
+<br>
+<img src="files_for_readme/word_count_wmaths_boxplot.png" alt="Word count with numbers and symbols" style="width:80.0%"/>
+<br>
 
 ## Inter-rater Reliability
 
@@ -648,20 +606,20 @@ Quadradic Weighted Kappa (QWK) was calculated to estimate the
 inter-rater reliability for the double-scored responses. The inter-rater
 reliability estimates for all items are presented below.
 
-|   Item   | IRR (QWK) |    Score Type    |
-|:--------:|:---------:|:----------------:|
-| VH134067 |   0.966   | component-scored |
-| VH139380 |   0.981   | component-scored |
-| VH266015 |   0.963   | component-scored |
-| VH266510 |   0.933   | component-scored |
-| VH269384 |   0.970   |  atomic-scored   |
-| VH271613 |   0.977   |  atomic-scored   |
-| VH302907 |   0.980   | component-scored |
-| VH304954 |   0.985   | component-scored |
-| VH507804 |   0.991   |  atomic-scored   |
-| VH525628 |   0.957   |  atomic-scored   |
+Table: N Counts for Test/Train Split
 
-Inter-rater reliability, by item
+|item     |  QWK | score type |
+|:--------|:----:|:----------:|
+|VH134067 | 0.966| Type I     |
+|VH139380 | 0.981| Type I     |
+|VH266015 | 0.963| Type II    |
+|VH266510 | 0.933| Type I     |
+|VH269384 | 0.970| Type II    |
+|VH271613 | 0.975| Type II    |
+|VH302907 | 0.980| Type I     |
+|VH304954 | 0.984| Type I     |
+|VH507804 | 0.991| Type II    |
+|VH525628 | 0.956| Type I     |
 
 ## Variables with different meanings for each item
 
@@ -766,43 +724,6 @@ are stored as fixed length logical vectors (e.g., "TRUE TRUE"). <br>
 **target4**-- drag and drop tile "to" <br>\
 **parsed_xml_v1**-- CR text <br>
 
-<<<<<<< HEAD
-=======
-## Information about constructed response field
-
-The following plots provide information about the distribution of word counts for 
-the `predict_from` constructed reponse field. <br>\
-<br>
-
-<img src="files_for_readme/word_count_boxplot.png" alt="Word count (excluding numbers and symbols)" style="width:80.0%"/>
-<br>\
-<img src="files_for_readme/word_count_wmaths_boxplot.png" alt="Word count with numbers and symbols" style="width:80.0%"/>
-<br>
-
-## Inter-rater Reliability
-
-Approximately 5% of the NAEP item responses were double scored.
-Quadradic Weighted Kappa (QWK) was calculated to estimate the
-inter-rater reliability for the double-scored responses. The inter-rater
-reliability estimates for all items are presented below.
-
-Table: N Counts for Test/Train Split
-
-|item     |  QWK | score type |
-|:--------|:----:|:----------:|
-|VH134067 | 0.966| Type I     |
-|VH139380 | 0.981| Type I     |
-|VH266015 | 0.963| Type II    |
-|VH266510 | 0.933| Type I     |
-|VH269384 | 0.970| Type II    |
-|VH271613 | 0.975| Type II    |
-|VH302907 | 0.980| Type I     |
-|VH304954 | 0.984| Type I     |
-|VH507804 | 0.991| Type II    |
-|VH525628 | 0.956| Type I     |
-
-
->>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 ## Suppression
 
 To minimize the risk of statistical disclosure, suppression was applied
