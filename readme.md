@@ -1,9 +1,3 @@
----
-editor_options:
-  markdown:
-    wrap: 72
----
-
 # NAEP Math Automated Scoring Challenge Overview
 
 The [National Center for Education Statistics
