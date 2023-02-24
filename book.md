@@ -196,34 +196,24 @@ and artificial intelligence; only models that can provide substantive
 validity evidence and demonstrate that bias is not observed would be
 approved for purchase and use.
 
-::: {#refs .references .csl-bib-body .hanging-indent}
-::: {#ref-doshi-velez2017 .csl-entry}
-Doshi-Velez, Finale, and Been Kim. 2017. "Towards A Rigorous Science of
-Interpretable Machine Learning." *arXiv:1702.08608* $$Cs, Stat$$, March.
+Doshi-Velez, Finale, and Been, Kim. 2017. "Towards A Rigorous Science of
+Interpretable Machine Learning." *arXiv:1702.08608*, March.
 <http://arxiv.org/abs/1702.08608>.
-:::
 
-::: {#ref-kumar2020 .csl-entry}
 Kumar, Vivekanandan, and David Boulanger. 2020. "Explainable Automated
 Essay Scoring: Deep Learning Really Has Pedagogical Value." *Frontiers
 in Education* 5 (October): 572367.
 <https://doi.org/10.3389/feduc.2020.572367>.
-:::
 
-::: {#ref-liptonMythosModelInterpretability2018 .csl-entry}
 Lipton, Zachary C. 2018. "The Mythos of Model Interpretability: In
 Machine Learning, the Concept of Interpretability Is Both Important and
 Slippery." *Queue* 16 (3): 31--57.
 <https://doi.org/10.1145/3236386.3241340>.
-:::
 
-::: {#ref-shermisStateoftheartAutomatedEssay2014 .csl-entry}
 Shermis, Mark D. 2014. "State-of-the-Art Automated Essay Scoring:
 Competition, Results, and Future Directions from a United States
 Demonstration." *Assessing Writing* 20 (April): 53--76.
 <https://doi.org/10.1016/j.asw.2013.04.001>.
-:::
-:::
 
 <a id="eligibility"></a>
 
@@ -313,7 +303,6 @@ be imprisoned for up to 5 years, and/or fined up to \$250,000.
 No future NAEP contract work is guaranteed on the basis of performance
 in this competition.
 
-------------------------------------------------------------------------
 
 [$$1$$](#_ftnref1)Individuals at selected organizations must access and
 analyze the data in the United States but they do not need to be U.S.
@@ -926,34 +915,24 @@ submissions:
 Responses to the interpretability challenge should be included in a
 separate section within the technical report.
 
-::: {.references .csl-bib-body .hanging-indent}
-::: {#ref-bridgeman2012 .csl-entry}
 Bridgeman, Brent, Catherine Trapani, and Yigal Attali. 2012. "Comparison
 of Human and Machine Scoring of Essays: Differences by Gender,
 Ethnicity, and Country." *Appl. Meas. Educ.* 25 (1): 27---40.
 <https://doi.org/10.1080/08957347.2012.635502>.
-:::
 
-::: {#ref-justice2022 .csl-entry}
 Justice, Derek. 2022. "A Linear Model Approach to Bias Detection." In
 *Proceedings of the National Council on Measurement in Education*. San
 Diego, California, United States.
-:::
 
-::: {#ref-lipton2018 .csl-entry}
 Lipton, Zachary C. 2018. "The Mythos of Model Interpretability: In
 Machine Learning, the Concept of Interpretability Is Both Important and
 Slippery." *Queue* 16 (3): 31--57.
 <https://doi.org/10.1145/3236386.3241340>.
-:::
 
-::: {#ref-penfield2016 .csl-entry}
 Penfield, R. D. 2016. "Fairness in Test Scoring." In *Fairness in
 Educational Assessment and Measurement*, edited by N. J. Dorans and L.
 L. Cook, 55--76. Routledge.
 <https://www.taylorfrancis.com/books/oa-edit/10.4324/9781315774527/fairness-educational-assessment-measurement-neil-dorans-linda-cook>.
-:::
-:::
 
 <a id="participation"></a> Participation Process ================
 
