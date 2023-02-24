@@ -158,7 +158,7 @@ of the response, and in other items there is an overall score in which
 the predicted score will incorporate results from calculations in
 addition to the constructed response.
 
-Detailed item information is [available](resources/item_guide.pdf) and
+Detailed item information is [available](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf) and
 the training guides used for human scorers are included in the
 classified dataset to approved participants. Training data from prior
 human scoring administrations will be provided for all items to
@@ -227,7 +227,7 @@ universities. Due to prior access to the items and test data, current
 NAEP Alliance member organizations are not eligible to participate.
 Organizations must be located within the United States due to data
 privacy requirements. In addition to these criteria, organizations must
-demonstrate the following: [$$1$$](#_ftn1)
+demonstrate the following: 
 
 ## Requirements
 
@@ -269,7 +269,7 @@ action. This form is also included within the security application.
 
 These confirmations and documentation of secure data handling
 requirements must be documented in the "[NAEP Secure Data Access
-Application](resources/data-application.zip)". This application must be
+Application](resources/Data_Agreement_Forms.zip)". This application must be
 completed and approved by IES personnel before an applicant will be
 provided access to the response data. Completed applications (please
 enrypt before transmission) should be sent to:
@@ -304,104 +304,8 @@ No future NAEP contract work is guaranteed on the basis of performance
 in this competition.
 
 
-[$$1$$](#_ftnref1)Individuals at selected organizations must access and
-analyze the data in the United States but they do not need to be U.S.
-citizens or residents. For example, a foreign student at a U.S.-based
-university may participate in the challenge as long as they are
-analyzing the data from within the United States.
+Individuals at selected organizations must access and analyze the data in the United States but they do not need to be U.S. citizens or residents. For example, a foreign student at a U.S.-based university may participate in the challenge as long as they are analyzing the data from within the United States.
 
-## Eligibility Information
-
-Institutions and individuals that have the ability and capacity to
-conduct research are eligible to apply. Eligible applicants include, but
-are not limited to, nonprofit and for-profit organizations and public
-and private agencies and institutions, such as colleges and
-universities. Due to prior access to the items and test data, current
-NAEP Alliance member organizations are not eligible to participate.
-Organizations must be located within the United States due to data
-privacy requirements. In addition to these criteria, organizations must
-meet the following criteria:
-
-## Requirements
-
-1.  **Prior Experience with Sensitive Data.** Applicants must have prior
-    experience handling confidential federal or education data data in a
-    secure manner. Relevant experience includes (but is not limited to):
-    collecting, processing, and or/analyzing confidential data on
-    contract with a U.S. government agency; prior successful application
-    for an IES restricted-use data license; approval to analyze
-    confidential data at other federal agencies (for example, to access
-    data within a Federal Statistical Research Data Center (FSRDC);
-    agreements with K-12 school district/state departments of education
-    to access confidential or classified data; or agreements with other
-    local or federal agencies to safely process confidential data.
-
-2.  **Secure Data Handling Procedures**. Applicants must meet minimum
-    computer security requirements as specified in the "security plan
-    for remote access to NAEP Materials" document. Please note that
-    there are reductions to the requirements given the web-based and
-    distributed nature of automated scoring work.
-
-3.  **Confidentiality Agreement & Notarized Affidavit of
-    Non-Disclosure**. For more information, please see the appropriate
-    document.
-
-### Requirements for Participation & Confidential Data Security
-
-The datasets used for this challenge contain student responses from
-previous NAEP assessments and are therefore considered NCES confidential
-materials. All participants must confirm that they are able to meet NCES
-Confidential Data security requirements, submit non-disclosure
-agreements about student responses, and confidentiality agreements.
-These requirements include restrictions on the use of data, security of
-data, and destruction of data when the analysis is completed. Data must
-also be destroyed/deleted within 30 days of completing the Challenge and
-all participants must submit a signed and witnessed form confirming that
-action. This form is also included within the security application.
-
-These confirmations and documentation of secure data handling
-requirements must be documented in the "[NAEP Secure Data Access
-Application](data-application.zip)". This application must be completed
-and approved by IES personnel before an applicant will be provided
-access to the response data. Completed responses (please enrypt before
-transmission) should be sent to:
-[automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov?subject=Math%20Challenge).
-
-Directly identifying personal information is not provided for use in
-analyses. It is possible, although extremely unlikely, that responses
-may contain personal information about individual respondents or the
-contexts in which they learn. Should any individually identifiable
-information about students, their families, and their schools be
-identified in the responses, it must be reported to NCES immediately and
-removed from any modeling activity or analysis.
-
-No person may:
-
--   Use data for any purpose other than the completion of this challenge
-
--   Make any publication without prior review and approval by IES. This
-    review is conducted with particular attention to ensure that no
-    individual person in the research sample can be identified in the
-    publication.
-
-The *Education Sciences Reform Act of 2002* requires IES to develop and
-enforce standards to protect the confidentiality of students, their
-families, and their schools in the collection, reporting, and
-publication of data. The IES confidentiality statute is found in 20
-U.S.C. 9573. Anyone who violates the confidentiality provisions of this
-Act when using the data may be found guilty of a class E felony and can
-be imprisoned for up to 5 years, and/or fined up to \$250,000.
-
-No future NAEP contract work is guaranteed on the basis of performance
-in this competition.
-
-------------------------------------------------------------------------
-
-[$$1$$](#_ftnref1) Individuals at selected organizations must access and
-analyze the data in the United States but they do not need to be U.S.
-citizens or residents. For example, a foreign student at a U.S.-based
-university may participate in the challenge as long as they are
-analyzing the data from within the United States.
 
 <a id="dataset"></a>
 
@@ -427,7 +331,7 @@ The training dataset will be provided first and then a test dataset
 deadline. Detailed information about responses included for each item is
 provided in the "Variables with different meanings for each item"
 section below and in the scoring guides included in the "[*Item
-information.zip*](resources/Item%20information.zip)" file.
+information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)" file.
 
 ## Summary Item Information
 
@@ -539,7 +443,7 @@ For the "Type II" items, the sub-item scores have been combined into a
 single "assigned_score" variable which is described in the common
 variables table above. The original part scores are also included and
 can be decoded using the item scoring guides provided in "[*Item
-information.zip*](data/Item%20information.zip)".
+information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)".
 
 To make it clear which outcome contestants should predict, we've created
 a variable "`score_to_predict`" which is the field which will be used as
@@ -612,7 +516,8 @@ Table: N Counts for Test/Train Split
 
 ## Variables with different meanings for each item
 
-Please consult the scoring guides included in `Item information.zip` to 
+Please consult the scoring guides included in "[*Item
+information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)" to 
 map the fields below to the question areas.
 
 #### For item VH134067
@@ -915,9 +820,13 @@ submissions:
 Responses to the interpretability challenge should be included in a
 separate section within the technical report.
 
+
+
+#### References
+
 Bridgeman, Brent, Catherine Trapani, and Yigal Attali. 2012. "Comparison
 of Human and Machine Scoring of Essays: Differences by Gender,
-Ethnicity, and Country." *Appl. Meas. Educ.* 25 (1): 27---40.
+Ethnicity, and Country." *Appl. Meas. Educ.* 25 (1): 27-40.
 <https://doi.org/10.1080/08957347.2012.635502>.
 
 Justice, Derek. 2022. "A Linear Model Approach to Bias Detection." In
@@ -926,15 +835,15 @@ Diego, California, United States.
 
 Lipton, Zachary C. 2018. "The Mythos of Model Interpretability: In
 Machine Learning, the Concept of Interpretability Is Both Important and
-Slippery." *Queue* 16 (3): 31--57.
+Slippery." *Queue* 16 (3): 31-57.
 <https://doi.org/10.1145/3236386.3241340>.
 
 Penfield, R. D. 2016. "Fairness in Test Scoring." In *Fairness in
 Educational Assessment and Measurement*, edited by N. J. Dorans and L.
-L. Cook, 55--76. Routledge.
+L. Cook, 55-76. Routledge.
 <https://www.taylorfrancis.com/books/oa-edit/10.4324/9781315774527/fairness-educational-assessment-measurement-neil-dorans-linda-cook>.
 
-<a id="participation"></a> Participation Process ================
+<a id="participation"></a> Participation Process 
 
 Interested participants must begin by reviewing the eligibility
 criteria, timeline, and other materials and ensuring that they are
@@ -942,7 +851,8 @@ well-suited to participate. Once completed, interested participants
 submit an application for data access to participate by first completing
 the required security authorization forms to access NCES Confidential
 materials. These are provided at:
-[data-application.zip](data-application.zip).
+"[NAEP Secure Data Access
+Application](resources/Data_Agreement_Forms.zip)".
 
 Completed data applications should be encrypted with a password and sent
 via email to:
@@ -977,7 +887,7 @@ individual with a disability in connection with the submission process,
 the entry remains subject to all other requirements and limitations in
 this notice.
 
-<a id="submission"></a> Submission Instructions ================
+<a id="submission"></a> Submission Instructions 
 
 #### Valid submissions will include reports with the following items:
 
