@@ -53,16 +53,17 @@ URL](https://www.eventbrite.com/e/rfi-for-naep-math-automated-scoring-challenge-
 
 # Table of Contents
 
-1.  [Description](#description)
-2.  [Eligibility](#eligibility)
-3.  [Dataset](#dataset)
+1.  [Challenge-Description](#description)
+2.  [Eligibility-Information](#eligibility)
+3.  [Dataset-Description](#dataset)
 4.  [Evaluation-Criteria](#evaluation)
 5.  [Participation-Process](#participation)
 6.  [Submission-Instructions](#submission)
-7.  [Prizes](#prizes)
+7.  [Prize-Information](#prizes)
 8.  [Timeline](#timeline)
-9.  [Appendix-A-Methods](#appendix)
-10. [References](#references)
+9.  [Terms-and-Conditions](#terms)
+10.  [Appendix-A-Methods](#appendix)
+
 
 ## Challenge Administration Platform
 
@@ -201,7 +202,7 @@ Doshi-Velez, Finale, and Been, Kim. 2017. "Towards A Rigorous Science of
 Interpretable Machine Learning." *arXiv:1702.08608*, March.
 <http://arxiv.org/abs/1702.08608>.
 
-Kumar, Vivekanandan, and David Boulanger. 2020. "Explainable Automated
+Kumar, Vivekanandan, and Boulanger, David. 2020. "Explainable Automated
 Essay Scoring: Deep Learning Really Has Pedagogical Value." *Frontiers
 in Education* 5 (October): 572367.
 <https://doi.org/10.3389/feduc.2020.572367>.
@@ -218,7 +219,7 @@ Demonstration." *Assessing Writing* 20 (April): 53--76.
 
 <a id="eligibility"></a>
 
-## Eligibility Information
+# Eligibility Information
 
 Institutions and individuals that have the ability and capacity to
 conduct research are eligible to apply. Eligible applicants include, but
@@ -253,7 +254,7 @@ demonstrate the following requirements.
     Non-Disclosure**. For more information, please see the appropriate
     document.
 
-### Confidential Data Security
+## Confidential Data Security
 
 The datasets used for this challenge contain student responses from
 previous NAEP assessments and are therefore considered NCES confidential
@@ -308,7 +309,7 @@ Individuals at selected organizations must access and analyze the data in the Un
 
 <a id="dataset"></a>
 
-## Dataset Description
+# Dataset Description
 
 Participants will be provided access to digital files that contain
 information related to the assessment items, the scoring guides used to
@@ -456,9 +457,9 @@ the `predict_from` constructed reponse field. <br>\
 
 <a id="evaluation"></a>
 
-## Evaluation Criteria
+# Evaluation Criteria
 
-### Prediction Challenge
+## Prediction Challenge
 
 The first challenge will predict the score assigned by a human rater as
 accurately as possible using natural language processing methods. There
@@ -625,7 +626,7 @@ separate section within the technical report.
 
 ### References
 
-Bridgeman, Brent, Catherine Trapani, and Yigal Attali. 2012. "Comparison
+Bridgeman, Brent, Trapani, Catherine, and Attali, Yigal. 2012. "Comparison
 of Human and Machine Scoring of Essays: Differences by Gender,
 Ethnicity, and Country." *Appl. Meas. Educ.* 25 (1): 27-40.
 <https://doi.org/10.1080/08957347.2012.635502>.
@@ -646,7 +647,7 @@ L. Cook, 55-76. Routledge.
 
 <a id="participation"></a> 
 
-## Participation Process 
+# Participation Process 
 
 Interested participants must begin by reviewing the eligibility
 criteria, timeline, and other materials and ensuring that they are
@@ -722,9 +723,9 @@ modify the test dataset provided for each item.
 6.  Zip that folder/directory. Add your technical report and upload to
     the secure site that was provided via email.
 
-<a id="prizes"></a> Prizes ================
+<a id="prizes"></a> 
 
-## Prize Information
+# Prize Information
 
 The potential prize purse is up to \$60,000 per team.
 
@@ -741,7 +742,7 @@ interpretability challenge.
 
 <a id="timeline"></a> 
 
-## Timeline 
+# Timeline 
 
 | Activity                                   | Date                |
 |--------------------------------------------|---------------------|
@@ -753,9 +754,9 @@ interpretability challenge.
 | Submission Deadline (Report & Predictions) | 5/8/23 @at 11:59 ET |
 | Winners Announced                          | June 2023           |
 
-<a id="rules"></a> Rules ================
+<a id="terms"></a> 
 
-## Terms and Conditions
+# Terms and Conditions
 
 All entry information submitted
 to [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov){.email} and
@@ -944,8 +945,9 @@ document and a copy of the submission package in an accessible format
 (e.g., braille, large print, audiotape, or compact disc) on request
 to [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov){.email}.
 
-<a id="appendix"></a> Appendix A: Analysis Methods & Response
-Distributions ================
+<a id="appendix"></a> 
+
+# Appendix A: Analysis Methods & Response Distributions
 
 ### Quadratic weighted kappa
 
