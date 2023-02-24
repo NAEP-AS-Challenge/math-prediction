@@ -227,9 +227,7 @@ universities. Due to prior access to the items and test data, current
 NAEP Alliance member organizations are not eligible to participate.
 Organizations must be located within the United States due to data
 privacy requirements. In addition to these criteria, organizations must
-demonstrate the following: 
-
-## Requirements
+demonstrate the following requirements.  
 
 1.  **Prior Experience with Sensitive Data.** Applicants must have prior
     experience handling confidential federal or education data data in a
@@ -254,7 +252,7 @@ demonstrate the following:
     Non-Disclosure**. For more information, please see the appropriate
     document.
 
-### Requirements for Participation & Confidential Data Security
+### Confidential Data Security
 
 The datasets used for this challenge contain student responses from
 previous NAEP assessments and are therefore considered NCES confidential
@@ -268,8 +266,8 @@ all participants must submit a signed and witnessed form confirming that
 action. This form is also included within the security application.
 
 These confirmations and documentation of secure data handling
-requirements must be documented in the "[NAEP Secure Data Access
-Application](resources/Data_Agreement_Forms.zip)". This application must be
+requirements must be documented in the [NAEP Secure Data Access
+Application](resources/Data_Agreement_Forms.zip). This application must be
 completed and approved by IES personnel before an applicant will be
 provided access to the response data. Completed applications (please
 enrypt before transmission) should be sent to:
@@ -330,8 +328,8 @@ The training dataset will be provided first and then a test dataset
 (with responses only) will be provided **one week** before the challenge
 deadline. Detailed information about responses included for each item is
 provided in the "Variables with different meanings for each item"
-section below and in the scoring guides included in the "[*Item
-information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)" file.
+section below and in the scoring guides included in the [*Item
+information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf) file.
 
 ## Summary Item Information
 
