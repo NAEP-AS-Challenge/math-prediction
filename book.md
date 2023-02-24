@@ -158,7 +158,7 @@ of the response, and in other items there is an overall score in which
 the predicted score will incorporate results from calculations in
 addition to the constructed response.
 
-Detailed item information is [available](resources/item_guide.pdf) and
+Detailed item information is [available](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf) and
 the training guides used for human scorers are included in the
 classified dataset to approved participants. Training data from prior
 human scoring administrations will be provided for all items to
@@ -196,34 +196,24 @@ and artificial intelligence; only models that can provide substantive
 validity evidence and demonstrate that bias is not observed would be
 approved for purchase and use.
 
-::: {#refs .references .csl-bib-body .hanging-indent}
-::: {#ref-doshi-velez2017 .csl-entry}
-Doshi-Velez, Finale, and Been Kim. 2017. "Towards A Rigorous Science of
-Interpretable Machine Learning." *arXiv:1702.08608* $$Cs, Stat$$, March.
+Doshi-Velez, Finale, and Been, Kim. 2017. "Towards A Rigorous Science of
+Interpretable Machine Learning." *arXiv:1702.08608*, March.
 <http://arxiv.org/abs/1702.08608>.
-:::
 
-::: {#ref-kumar2020 .csl-entry}
 Kumar, Vivekanandan, and David Boulanger. 2020. "Explainable Automated
 Essay Scoring: Deep Learning Really Has Pedagogical Value." *Frontiers
 in Education* 5 (October): 572367.
 <https://doi.org/10.3389/feduc.2020.572367>.
-:::
 
-::: {#ref-liptonMythosModelInterpretability2018 .csl-entry}
 Lipton, Zachary C. 2018. "The Mythos of Model Interpretability: In
 Machine Learning, the Concept of Interpretability Is Both Important and
 Slippery." *Queue* 16 (3): 31--57.
 <https://doi.org/10.1145/3236386.3241340>.
-:::
 
-::: {#ref-shermisStateoftheartAutomatedEssay2014 .csl-entry}
 Shermis, Mark D. 2014. "State-of-the-Art Automated Essay Scoring:
 Competition, Results, and Future Directions from a United States
 Demonstration." *Assessing Writing* 20 (April): 53--76.
 <https://doi.org/10.1016/j.asw.2013.04.001>.
-:::
-:::
 
 <a id="eligibility"></a>
 
@@ -237,7 +227,7 @@ universities. Due to prior access to the items and test data, current
 NAEP Alliance member organizations are not eligible to participate.
 Organizations must be located within the United States due to data
 privacy requirements. In addition to these criteria, organizations must
-demonstrate the following: [$$1$$](#_ftn1)
+demonstrate the following: 
 
 ## Requirements
 
@@ -279,7 +269,7 @@ action. This form is also included within the security application.
 
 These confirmations and documentation of secure data handling
 requirements must be documented in the "[NAEP Secure Data Access
-Application](resources/data-application.zip)". This application must be
+Application](resources/Data_Agreement_Forms.zip)". This application must be
 completed and approved by IES personnel before an applicant will be
 provided access to the response data. Completed applications (please
 enrypt before transmission) should be sent to:
@@ -313,106 +303,9 @@ be imprisoned for up to 5 years, and/or fined up to \$250,000.
 No future NAEP contract work is guaranteed on the basis of performance
 in this competition.
 
-------------------------------------------------------------------------
 
-[$$1$$](#_ftnref1)Individuals at selected organizations must access and
-analyze the data in the United States but they do not need to be U.S.
-citizens or residents. For example, a foreign student at a U.S.-based
-university may participate in the challenge as long as they are
-analyzing the data from within the United States.
+Individuals at selected organizations must access and analyze the data in the United States but they do not need to be U.S. citizens or residents. For example, a foreign student at a U.S.-based university may participate in the challenge as long as they are analyzing the data from within the United States.
 
-## Eligibility Information
-
-Institutions and individuals that have the ability and capacity to
-conduct research are eligible to apply. Eligible applicants include, but
-are not limited to, nonprofit and for-profit organizations and public
-and private agencies and institutions, such as colleges and
-universities. Due to prior access to the items and test data, current
-NAEP Alliance member organizations are not eligible to participate.
-Organizations must be located within the United States due to data
-privacy requirements. In addition to these criteria, organizations must
-meet the following criteria:
-
-## Requirements
-
-1.  **Prior Experience with Sensitive Data.** Applicants must have prior
-    experience handling confidential federal or education data data in a
-    secure manner. Relevant experience includes (but is not limited to):
-    collecting, processing, and or/analyzing confidential data on
-    contract with a U.S. government agency; prior successful application
-    for an IES restricted-use data license; approval to analyze
-    confidential data at other federal agencies (for example, to access
-    data within a Federal Statistical Research Data Center (FSRDC);
-    agreements with K-12 school district/state departments of education
-    to access confidential or classified data; or agreements with other
-    local or federal agencies to safely process confidential data.
-
-2.  **Secure Data Handling Procedures**. Applicants must meet minimum
-    computer security requirements as specified in the "security plan
-    for remote access to NAEP Materials" document. Please note that
-    there are reductions to the requirements given the web-based and
-    distributed nature of automated scoring work.
-
-3.  **Confidentiality Agreement & Notarized Affidavit of
-    Non-Disclosure**. For more information, please see the appropriate
-    document.
-
-### Requirements for Participation & Confidential Data Security
-
-The datasets used for this challenge contain student responses from
-previous NAEP assessments and are therefore considered NCES confidential
-materials. All participants must confirm that they are able to meet NCES
-Confidential Data security requirements, submit non-disclosure
-agreements about student responses, and confidentiality agreements.
-These requirements include restrictions on the use of data, security of
-data, and destruction of data when the analysis is completed. Data must
-also be destroyed/deleted within 30 days of completing the Challenge and
-all participants must submit a signed and witnessed form confirming that
-action. This form is also included within the security application.
-
-These confirmations and documentation of secure data handling
-requirements must be documented in the "[NAEP Secure Data Access
-Application](data-application.zip)". This application must be completed
-and approved by IES personnel before an applicant will be provided
-access to the response data. Completed responses (please enrypt before
-transmission) should be sent to:
-[automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov?subject=Math%20Challenge).
-
-Directly identifying personal information is not provided for use in
-analyses. It is possible, although extremely unlikely, that responses
-may contain personal information about individual respondents or the
-contexts in which they learn. Should any individually identifiable
-information about students, their families, and their schools be
-identified in the responses, it must be reported to NCES immediately and
-removed from any modeling activity or analysis.
-
-No person may:
-
--   Use data for any purpose other than the completion of this challenge
-
--   Make any publication without prior review and approval by IES. This
-    review is conducted with particular attention to ensure that no
-    individual person in the research sample can be identified in the
-    publication.
-
-The *Education Sciences Reform Act of 2002* requires IES to develop and
-enforce standards to protect the confidentiality of students, their
-families, and their schools in the collection, reporting, and
-publication of data. The IES confidentiality statute is found in 20
-U.S.C. 9573. Anyone who violates the confidentiality provisions of this
-Act when using the data may be found guilty of a class E felony and can
-be imprisoned for up to 5 years, and/or fined up to \$250,000.
-
-No future NAEP contract work is guaranteed on the basis of performance
-in this competition.
-
-------------------------------------------------------------------------
-
-[$$1$$](#_ftnref1) Individuals at selected organizations must access and
-analyze the data in the United States but they do not need to be U.S.
-citizens or residents. For example, a foreign student at a U.S.-based
-university may participate in the challenge as long as they are
-analyzing the data from within the United States.
 
 <a id="dataset"></a>
 
@@ -437,9 +330,8 @@ The training dataset will be provided first and then a test dataset
 (with responses only) will be provided **one week** before the challenge
 deadline. Detailed information about responses included for each item is
 provided in the "Variables with different meanings for each item"
-<<<<<<< HEAD
 section below and in the scoring guides included in the "[*Item
-information.zip*](resources/Item%20information.zip)" file.
+information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)" file.
 
 ## Summary Item Information
 
@@ -489,9 +381,6 @@ information.zip*](resources/Item%20information.zip)" file.
 | VH525628 | 2019 |   8   | test  |      1       |    981 |
 
 Item information
-=======
-section below and in the scoring guides included in the `Item information.zip` file.
->>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 
 ## Data File Information
 
@@ -511,16 +400,11 @@ for all items in the source data. Those variables are described in the
 table below.
 
 | Variable         | Description                                                                                             | Type    | Values (if constrained)                                                                                                                                                               |
-<<<<<<< HEAD
-|:-----------------|:-----------------|:-----------------|:------------------|
-| student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
-=======
 |:-----------------|:--------------------------------------------------------------------------------------------------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
 | accession        | Item number                                                                                             | string  | e.g. "VH139087"                                                                                                                                                                       |
 | score_to_predict | Outcome to predict                                                                                      | integer | e.g. 1, 2, 3                                                                                                                                                                          |
 | predict_from     | Text related to "score_to_predict"                                                                      | string  | "Because A\>B"                                                                                                                                                                        |
->>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 | year             | Year assessment was administered                                                                        | integer | 2017, or 2019                                                                                                                                                                         |
 | srace10          | Student's race reported by the school                                                                   | string  | (1='White, not Hispanic', 2='Afric Amer, not Hisp', 3='Hispanic of any race', 4='Asian, not Hispanic', 5='Amer Ind/Alaska Nat', 6='Native Ha/Pac Island', 7='\>1 race, not Hispanic') |
 | dsex             | Student's sex                                                                                           | integer | 1=male, 2=female                                                                                                                                                                      |
@@ -537,7 +421,6 @@ table below.
 | ee_use           | Item used equation editor                                                                               | integer | 0=no EE use, 1=EE use                                                                                                                                                                 |
 
 
-<<<<<<< HEAD
 ## Item Classification & Dataset Processing
 
 We have classified the 10 items into "Type 1" and "Type 2" for the
@@ -560,7 +443,7 @@ For the "Type II" items, the sub-item scores have been combined into a
 single "assigned_score" variable which is described in the common
 variables table above. The original part scores are also included and
 can be decoded using the item scoring guides provided in "[*Item
-information.zip*](data/Item%20information.zip)".
+information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)".
 
 To make it clear which outcome contestants should predict, we've created
 a variable "`score_to_predict`" which is the field which will be used as
@@ -574,34 +457,6 @@ parts in their scoring model to improve performance.\
 [INSERT TEXT RE: HUMAN SCORING HERE]
 
 ### Dataset processing
-=======
-## Data Processing Information
-
-There are four "Type II" items which were composed of multiple
-sub-items or parts that each have their own set of scores and response
-fields. For the purpose of the challenge, participants are requested to
-score the combined overall score (`score_to_predict`), based on the constructed response component which 
-we believe is the most salient (`predict_from`), using NLP. For the six other items, called "Type I"
-items here, there are multiple parts within an item; however, these
-parts are considered dependently linked portions of the item and, as
-such, were assigned a single score that encompasses the responses
-contained within both parts.
-
-For the "Type II" items, the sub-item scores have been combined
-into a single "assigned_score" variable which is described in the common
-variables table above. The original part scores are also included and
-can be decoded using the item scoring guides provided in `Item information.zip` 
-which will be provided to participants with the responses upon approval of the 
-data application.
-
-Note that this composite variable is *not* always the outcome which
-contestants should predict. To make it clear which outcome contestants
-should predict, we've created a variable "`score_to_predict`" which is
-the field which will be used as the outcome variable to create predicted
-scores for. We've also created a variable named "`predict_from`" to
-identify the text with the most relevant constructed response text to
-use when creating predicted scores.
->>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 
 The original item data contained extended constructed response and short
 constructed response (ECR and CR) text, item selections for multiple
@@ -626,20 +481,16 @@ data was analyzed for sensitive information
 and some responses were removed as a result. However, spellcheck has not
 been applied to correct what may be obvious spelling errors.
 
-## Information about constructed response fields
+## Information about constructed response field
 
-Many items include one or more constructed response. While many of these
-are short, non-textual responses like equations, the following plots
-provide some information about the distribution of word and character
-counts found in the these responses. <br>\
+The following plots provide information about the distribution of word counts for 
+the `predict_from` constructed reponse field. <br>\
 <br>
 
-![Word count (excluding numbers and
-symbols)](files_for_readme/word_count_boxplot.png){alt="Word count (excluding numbers and symbols)"
-style="width:80.0%"} <br>\
-![Word count with numbers and
-symbols](files_for_readme/word_count_wmaths_boxplot.png){alt="Word count with numbers and symbols"
-style="width:80.0%"} <br>
+<img src="files_for_readme/word_count_boxplot.png" alt="Word count (excluding numbers and symbols)" style="width:80.0%"/>
+<br>
+<img src="files_for_readme/word_count_wmaths_boxplot.png" alt="Word count with numbers and symbols" style="width:80.0%"/>
+<br>
 
 ## Inter-rater Reliability
 
@@ -648,24 +499,25 @@ Quadradic Weighted Kappa (QWK) was calculated to estimate the
 inter-rater reliability for the double-scored responses. The inter-rater
 reliability estimates for all items are presented below.
 
-|   Item   | IRR (QWK) |    Score Type    |
-|:--------:|:---------:|:----------------:|
-| VH134067 |   0.966   | component-scored |
-| VH139380 |   0.981   | component-scored |
-| VH266015 |   0.963   | component-scored |
-| VH266510 |   0.933   | component-scored |
-| VH269384 |   0.970   |  atomic-scored   |
-| VH271613 |   0.977   |  atomic-scored   |
-| VH302907 |   0.980   | component-scored |
-| VH304954 |   0.985   | component-scored |
-| VH507804 |   0.991   |  atomic-scored   |
-| VH525628 |   0.957   |  atomic-scored   |
+Table: N Counts for Test/Train Split
 
-Inter-rater reliability, by item
+|item     |  QWK | score type |
+|:--------|:----:|:----------:|
+|VH134067 | 0.966| Type I     |
+|VH139380 | 0.981| Type I     |
+|VH266015 | 0.963| Type II    |
+|VH266510 | 0.933| Type I     |
+|VH269384 | 0.970| Type II    |
+|VH271613 | 0.975| Type II    |
+|VH302907 | 0.980| Type I     |
+|VH304954 | 0.984| Type I     |
+|VH507804 | 0.991| Type II    |
+|VH525628 | 0.956| Type I     |
 
 ## Variables with different meanings for each item
 
-Please consult the scoring guides included in `Item information.zip` to 
+Please consult the scoring guides included in "[*Item
+information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)" to 
 map the fields below to the question areas.
 
 #### For item VH134067
@@ -766,43 +618,6 @@ are stored as fixed length logical vectors (e.g., "TRUE TRUE"). <br>
 **target4**-- drag and drop tile "to" <br>\
 **parsed_xml_v1**-- CR text <br>
 
-<<<<<<< HEAD
-=======
-## Information about constructed response field
-
-The following plots provide information about the distribution of word counts for 
-the `predict_from` constructed reponse field. <br>\
-<br>
-
-<img src="files_for_readme/word_count_boxplot.png" alt="Word count (excluding numbers and symbols)" style="width:80.0%"/>
-<br>\
-<img src="files_for_readme/word_count_wmaths_boxplot.png" alt="Word count with numbers and symbols" style="width:80.0%"/>
-<br>
-
-## Inter-rater Reliability
-
-Approximately 5% of the NAEP item responses were double scored.
-Quadradic Weighted Kappa (QWK) was calculated to estimate the
-inter-rater reliability for the double-scored responses. The inter-rater
-reliability estimates for all items are presented below.
-
-Table: N Counts for Test/Train Split
-
-|item     |  QWK | score type |
-|:--------|:----:|:----------:|
-|VH134067 | 0.966| Type I     |
-|VH139380 | 0.981| Type I     |
-|VH266015 | 0.963| Type II    |
-|VH266510 | 0.933| Type I     |
-|VH269384 | 0.970| Type II    |
-|VH271613 | 0.975| Type II    |
-|VH302907 | 0.980| Type I     |
-|VH304954 | 0.984| Type I     |
-|VH507804 | 0.991| Type II    |
-|VH525628 | 0.956| Type I     |
-
-
->>>>>>> 481fdd5a5df8152e2c17a4afb0b6572fc2568260
 ## Suppression
 
 To minimize the risk of statistical disclosure, suppression was applied
@@ -1005,36 +820,30 @@ submissions:
 Responses to the interpretability challenge should be included in a
 separate section within the technical report.
 
-::: {.references .csl-bib-body .hanging-indent}
-::: {#ref-bridgeman2012 .csl-entry}
+
+
+#### References
+
 Bridgeman, Brent, Catherine Trapani, and Yigal Attali. 2012. "Comparison
 of Human and Machine Scoring of Essays: Differences by Gender,
-Ethnicity, and Country." *Appl. Meas. Educ.* 25 (1): 27---40.
+Ethnicity, and Country." *Appl. Meas. Educ.* 25 (1): 27-40.
 <https://doi.org/10.1080/08957347.2012.635502>.
-:::
 
-::: {#ref-justice2022 .csl-entry}
 Justice, Derek. 2022. "A Linear Model Approach to Bias Detection." In
 *Proceedings of the National Council on Measurement in Education*. San
 Diego, California, United States.
-:::
 
-::: {#ref-lipton2018 .csl-entry}
 Lipton, Zachary C. 2018. "The Mythos of Model Interpretability: In
 Machine Learning, the Concept of Interpretability Is Both Important and
-Slippery." *Queue* 16 (3): 31--57.
+Slippery." *Queue* 16 (3): 31-57.
 <https://doi.org/10.1145/3236386.3241340>.
-:::
 
-::: {#ref-penfield2016 .csl-entry}
 Penfield, R. D. 2016. "Fairness in Test Scoring." In *Fairness in
 Educational Assessment and Measurement*, edited by N. J. Dorans and L.
-L. Cook, 55--76. Routledge.
+L. Cook, 55-76. Routledge.
 <https://www.taylorfrancis.com/books/oa-edit/10.4324/9781315774527/fairness-educational-assessment-measurement-neil-dorans-linda-cook>.
-:::
-:::
 
-<a id="participation"></a> Participation Process ================
+<a id="participation"></a> Participation Process 
 
 Interested participants must begin by reviewing the eligibility
 criteria, timeline, and other materials and ensuring that they are
@@ -1042,7 +851,8 @@ well-suited to participate. Once completed, interested participants
 submit an application for data access to participate by first completing
 the required security authorization forms to access NCES Confidential
 materials. These are provided at:
-[data-application.zip](data-application.zip).
+"[NAEP Secure Data Access
+Application](resources/Data_Agreement_Forms.zip)".
 
 Completed data applications should be encrypted with a password and sent
 via email to:
@@ -1077,7 +887,7 @@ individual with a disability in connection with the submission process,
 the entry remains subject to all other requirements and limitations in
 this notice.
 
-<a id="submission"></a> Submission Instructions ================
+<a id="submission"></a> Submission Instructions 
 
 #### Valid submissions will include reports with the following items:
 
