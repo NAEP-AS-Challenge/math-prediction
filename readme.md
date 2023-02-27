@@ -1,3 +1,9 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
 # NAEP Math Automated Scoring Challenge Overview
 
 The [National Center for Education Statistics
@@ -45,6 +51,15 @@ challenge.**
 Advance webinar registration required at the [following
 URL](https://www.eventbrite.com/e/rfi-for-naep-math-automated-scoring-challenge-tickets-529659705437).
 
+Confirmations of readiness to participate are provided below.
+Documentation of readiness and secure data handling requirements must be
+documented in the [NAEP Secure Data Access
+Application](resources/Data_Agreement_Forms.zip). This application must
+be completed and approved by IES personnel before an applicant will be
+provided access to the response data. Completed applications (please
+enrypt before transmission) should be sent to:
+[automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov?subject=Math%20Challenge).
+
 # Table of Contents
 
 1.  [Challenge-Description](#description)
@@ -56,8 +71,7 @@ URL](https://www.eventbrite.com/e/rfi-for-naep-math-automated-scoring-challenge-
 7.  [Prize-Information](#prizes)
 8.  [Timeline](#timeline)
 9.  [Terms-and-Conditions](#terms)
-10.  [Appendix-A-Methods](#appendix)
-
+10. [Appendix-A-Methods](#appendix)
 
 ## Challenge Administration Platform
 
@@ -153,8 +167,9 @@ of the response, and in other items there is an overall score in which
 the predicted score will incorporate results from calculations in
 addition to the constructed response.
 
-Detailed item information is [available](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf) and
-the training guides used for human scorers are included in the
+Detailed item information is
+[available](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)
+and the training guides used for human scorers are included in the
 classified dataset to approved participants. Training data from prior
 human scoring administrations will be provided for all items to
 participants.
@@ -192,6 +207,7 @@ validity evidence and demonstrate that bias is not observed would be
 approved for purchase and use.
 
 ### References
+
 Doshi-Velez, Finale, and Been, Kim. 2017. "Towards A Rigorous Science of
 Interpretable Machine Learning." *arXiv:1702.08608*, March.
 <http://arxiv.org/abs/1702.08608>.
@@ -223,7 +239,7 @@ universities. Due to prior access to the items and test data, current
 NAEP Alliance member organizations are not eligible to participate.
 Organizations must be located within the United States due to data
 privacy requirements. In addition to these criteria, organizations must
-demonstrate the following requirements.  
+demonstrate the following requirements.
 
 1.  **Prior Experience with Sensitive Data.** Applicants must have prior
     experience handling confidential federal or education data data in a
@@ -245,8 +261,8 @@ demonstrate the following requirements.
     are not applicable and do not need to be completed.
 
 3.  **Confidentiality Agreement & Notarized Affidavit of
-    Non-Disclosure**. For more information, please see the appropriate
-    document.
+    Non-Disclosure**. This is provided separately in the forms
+    referenced below.
 
 ## Confidential Data Security
 
@@ -263,8 +279,8 @@ action. This form is also included within the security application.
 
 These confirmations and documentation of secure data handling
 requirements must be documented in the [NAEP Secure Data Access
-Application](resources/Data_Agreement_Forms.zip). This application must be
-completed and approved by IES personnel before an applicant will be
+Application](resources/Data_Agreement_Forms.zip). This application must
+be completed and approved by IES personnel before an applicant will be
 provided access to the response data. Completed applications (please
 enrypt before transmission) should be sent to:
 [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov?subject=Math%20Challenge).
@@ -297,9 +313,11 @@ be imprisoned for up to 5 years, and/or fined up to \$250,000.
 No future NAEP contract work is guaranteed on the basis of performance
 in this competition.
 
-
-Individuals at selected organizations must access and analyze the data in the United States but they do not need to be U.S. citizens or residents. For example, a foreign student at a U.S.-based university may participate in the challenge as long as they are analyzing the data from within the United States.
-
+Individuals at selected organizations must access and analyze the data
+in the United States but they do not need to be U.S. citizens or
+residents. For example, a foreign student at a U.S.-based university may
+participate in the challenge as long as they are analyzing the data from
+within the United States.
 
 <a id="dataset"></a>
 
@@ -325,7 +343,8 @@ The training dataset will be provided first and then a test dataset
 deadline. Detailed information about responses included for each item is
 provided in the "Variables with different meanings for each item"
 section below and in the scoring guides included in the [*Item
-information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf) file.
+information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)
+file.
 
 ## Data File Information
 
@@ -340,20 +359,21 @@ posted to the Github "issues" page for the challenge:
 
 ## Item Classification & Dataset Processing
 
-We have classified the 10 items into "Type 1" and "Type 2" for the
+We have classified the 10 items into *Type I* and *Type II* for the
 purpose of automated scoring; please note that these are categories
-created only for the purpose of this challenge for the sake of clarity in this automated scoring context.\
+created only for the purpose of this challenge for the sake of clarity
+in this automated scoring context.\
 \
-There are six "Type I" items which are composed of multiple parts that
+There are six *Type I* items which are composed of multiple parts that
 each have a score and response fields. For the purpose of the challenge,
 participants are requested to score one part of the item which contains
 a section that is potentially scorable using NLP. For the four other
-items, called "Type II" items here, there are multiple parts within an
+items, called *Type II* items here, there are multiple parts within an
 item; however, these parts are dependently linked portions of the item
 and, as such, were assigned a single score that encompasses the
 responses contained within two or more parts.
 
-For the "Type II" items, the sub-item scores have been combined into a
+For the *Type II* items, the sub-item scores have been combined into a
 single "assigned_score" variable which is described in the common
 variables table above. The original part scores are also included and
 can be decoded using the item scoring guides provided in "[*Item
@@ -372,20 +392,26 @@ parts in their scoring model to improve performance.\
 
 ## Summary Item Information
 
-The following items and number of responses are provided in the dataset. Definitions of the *score type* and how IRR is calculated are provided further below. Approximately 5% of the NAEP item responses were double scored. Quadradic Weighted Kappa (QWK) was calculated to estimate the inter-rater reliability for the double-scored responses. The number of responses, inter-rater reliability, score point range, and item type are provided below. 
+The following items and number of responses are provided in the dataset.
+Definitions of the *score type* and how IRR is calculated are provided
+further below. Approximately 5% of the NAEP item responses were double
+scored. Quadradic Weighted Kappa (QWK) was calculated to estimate the
+inter-rater reliability for the double-scored responses. The number of
+responses, inter-rater reliability, score point range, and item type are
+provided below.
 
-|item     |   irr|min |max |test  |train  |score_type |
-|:--------|-----:|:---|:---|:-----|:------|:----------|
-|VH134067 | 0.966|1   |2   |4,483 |40,346 |Type II    |
-|VH139380 | 0.981|1   |3   |2,045 |18,404 |Type II    |
-|VH266015 | 0.963|1   |4   |1,927 |17,340 |Type I     |
-|VH266510 | 0.933|1   |3   |4,502 |40,518 |Type II    |
-|VH269384 | 0.970|1   |4   |1,966 |17,695 |Type I     |
-|VH271613 | 0.977|1   |4   |4,175 |37,573 |Type I     |
-|VH302907 | 0.980|1   |2   |4,357 |39,210 |Type II    |
-|VH304954 | 0.985|1   |3   |2,790 |25,107 |Type II    |
-|VH507804 | 0.991|1   |4   |2,000 |17,995 |Type I     |
-|VH525628 | 0.957|1   |3   |1,946 |17,509 |Type II    |
+| item     |   irr | min | max | test  | train  | score_type |
+|:---------|------:|:----|:----|:------|:-------|:-----------|
+| VH134067 | 0.966 | 1   | 2   | 4,483 | 40,346 | Type II    |
+| VH139380 | 0.981 | 1   | 3   | 2,045 | 18,404 | Type II    |
+| VH266015 | 0.963 | 1   | 4   | 1,927 | 17,340 | Type I     |
+| VH266510 | 0.933 | 1   | 3   | 4,502 | 40,518 | Type II    |
+| VH269384 | 0.970 | 1   | 4   | 1,966 | 17,695 | Type I     |
+| VH271613 | 0.977 | 1   | 4   | 4,175 | 37,573 | Type I     |
+| VH302907 | 0.980 | 1   | 2   | 4,357 | 39,210 | Type II    |
+| VH304954 | 0.985 | 1   | 3   | 2,790 | 25,107 | Type II    |
+| VH507804 | 0.991 | 1   | 4   | 2,000 | 17,995 | Type I     |
+| VH525628 | 0.957 | 1   | 3   | 1,946 | 17,509 | Type II    |
 
 ## Variables Common to All Items
 
@@ -394,7 +420,7 @@ for all items in the source data. Those variables are described in the
 table below.
 
 | Variable         | Description                                                                                             | Type    | Values (if constrained)                                                                                                                                                               |
-|:-----------------|:--------------------------------------------------------------------------------------------------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:--------------|:--------------|:--------------|:----------------------------|
 | student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
 | accession        | Item number                                                                                             | string  | e.g. "VH139087"                                                                                                                                                                       |
 | score_to_predict | Outcome to predict                                                                                      | integer | e.g. 1, 2, 3                                                                                                                                                                          |
@@ -405,13 +431,13 @@ table below.
 | accom2           | Student accommodations. Note: Item VH304954 did not have accom2 so for this item accom2 is entirely NA. | integer | 1='Accommodated', 2='Not accommodated'                                                                                                                                                |
 | iep              | IEP                                                                                                     | integer | 1=SD, 2=Not SD                                                                                                                                                                        |
 | lep              | English learner status                                                                                  | integer | 1=English Learner, 2=Not English Learner                                                                                                                                              |
-| rater_1          | Score given by human rater (component-scored items only)                                                | string  | e.g. 1A, 2B, 3A …                                                                                                                                                                     |
-| pta_rtr1         | Part A human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A …                                                                                                                                                                   |
-| ptb_rtr1         | Part B human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A …                                                                                                                                                                   |
-| ptc_rtr1         | Part C human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A …                                                                                                                                                                   |
+| rater_1          | Score given by human rater (component-scored items only)                                                | string  | e.g. 1A, 2B, 3A ...                                                                                                                                                                   |
+| pta_rtr1         | Part A human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
+| ptb_rtr1         | Part B human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
+| ptc_rtr1         | Part C human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
 | composite        | Composite score (atomic-scored items only)                                                              | integer | e.g. 1, 2, 3                                                                                                                                                                          |
-| score            | Score (containing partial credit codes)                                                                 | string  | e.g. 1A, 2B, 3A …                                                                                                                                                                     |
-| assigned_score   | Simplified numeric score total for item (1, 2, 3...) from either "rater_1" or "composite"               | integer | 1, 2, 3 …                                                                                                                                                                             |
+| score            | Score (containing partial credit codes)                                                                 | string  | e.g. 1A, 2B, 3A ...                                                                                                                                                                   |
+| assigned_score   | Simplified numeric score total for item (1, 2, 3...) from either "rater_1" or "composite"               | integer | 1, 2, 3 ...                                                                                                                                                                           |
 | ee_use           | Item used equation editor                                                                               | integer | 0=no EE use, 1=EE use                                                                                                                                                                 |
 
 ### Dataset processing
@@ -441,13 +467,12 @@ been applied to correct what may be obvious spelling errors.
 
 ## Response length for constructed response fields
 
-The following plots provide information about the distribution of word counts for 
-the `predict_from` constructed reponse field. <br>\
+The following plots provide information about the distribution of word
+counts for the `predict_from` constructed response field. <br>\
 <br>
 
 <img src="files_for_readme/word_count_boxplot.png" alt="Word count (excluding numbers and symbols)" style="width:80.0%"/>
 <br>
-
 
 <a id="evaluation"></a>
 
@@ -513,10 +538,10 @@ additional methods such as:
     rater to machine raters to evaluate if there is a systematic
     variance between the two methods of scoring (Justice 2022).
 
--   T-test: For any two suspected demographic groups that have suspected
-    scoring differences, a simple t-test can be performed to see if
-    there any statistically significant differences between these two
-    groups (Penfield 2016) and whether that association is different
+-   *t*-test: For any two suspected demographic groups that have
+    suspected scoring differences, a simple *t*-test can be performed to
+    see if there any statistically significant differences between these
+    two groups (Penfield 2016) and whether that association is different
     between human and machine scoring.
 
 Although not an evaluated criteria for winning the competition,
@@ -620,9 +645,9 @@ separate section within the technical report.
 
 ### References
 
-Bridgeman, Brent, Trapani, Catherine, and Attali, Yigal. 2012. "Comparison
-of Human and Machine Scoring of Essays: Differences by Gender,
-Ethnicity, and Country." *Appl. Meas. Educ.* 25 (1): 27-40.
+Bridgeman, Brent, Trapani, Catherine, and Attali, Yigal. 2012.
+"Comparison of Human and Machine Scoring of Essays: Differences by
+Gender, Ethnicity, and Country." *Appl. Meas. Educ.* 25 (1): 27-40.
 <https://doi.org/10.1080/08957347.2012.635502>.
 
 Justice, Derek. 2022. "A Linear Model Approach to Bias Detection." In
@@ -639,22 +664,21 @@ Educational Assessment and Measurement*, edited by N. J. Dorans and L.
 L. Cook, 55-76. Routledge.
 <https://www.taylorfrancis.com/books/oa-edit/10.4324/9781315774527/fairness-educational-assessment-measurement-neil-dorans-linda-cook>.
 
-<a id="participation"></a> 
+<a id="participation"></a>
 
-# Participation Process 
+# Participation Process
 
 Interested participants must begin by reviewing the eligibility
 criteria, timeline, and other materials and ensuring that they are
 well-suited to participate. Once completed, interested participants
 submit an application for data access to participate by first completing
 the required security authorization forms to access NCES Confidential
-materials. These are provided at:
-"[NAEP Secure Data Access
+materials. These are provided at: "[NAEP Secure Data Access
 Application](resources/Data_Agreement_Forms.zip)".
 
 Completed data applications should be encrypted with a password and sent
 via email to:
-[automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov){.email}
+[automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov)
 by the deadline as stated in the "timeline" section.
 
 Please note that applications will be reviewed on a rolling basis. Once
@@ -679,13 +703,13 @@ as possible.
 
 Individuals with disabilities who need an accommodation or auxiliary aid
 in connection with the submission process should
-contact [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov){.email}.
+contact [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov).
 If the Department provides an accommodation or auxiliary aid to an
 individual with a disability in connection with the submission process,
 the entry remains subject to all other requirements and limitations in
 this notice.
 
-<a id="submission"></a> Submission Instructions 
+<a id="submission"></a> Submission Instructions
 
 #### Valid submissions will include reports with the following items:
 
@@ -717,7 +741,7 @@ modify the test dataset provided for each item.
 6.  Zip that folder/directory. Add your technical report and upload to
     the secure site that was provided via email.
 
-<a id="prizes"></a> 
+<a id="prizes"></a>
 
 # Prize Information
 
@@ -734,9 +758,9 @@ Participation in the prediction challenge and results that are within
 the 10 most accurate submissions is required for participation in the
 interpretability challenge.
 
-<a id="timeline"></a> 
+<a id="timeline"></a>
 
-# Timeline 
+# Timeline {#timeline}
 
 | Activity                                   | Date                |
 |--------------------------------------------|---------------------|
@@ -748,12 +772,12 @@ interpretability challenge.
 | Submission Deadline (Report & Predictions) | 5/8/23 @at 11:59 ET |
 | Winners Announced                          | June 2023           |
 
-<a id="terms"></a> 
+<a id="terms"></a>
 
 # Terms and Conditions
 
 All entry information submitted
-to [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov){.email} and
+to [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov) and
 all materials, including any copy of the submission, become property of
 the Department and will not be returned (See "Ownership and Licensing"
 for information about use of these items). Furthermore, the Department
@@ -928,7 +952,7 @@ contact the entrant about Federal Challenge and innovation related
 activities.
 
 Please
-contact [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov){.email} should
+contact [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov) should
 you have any comments or questions about these Official Rules, Terms,
 and Conditions.
 
@@ -937,9 +961,9 @@ and Conditions.
 Accessible Format: Individuals with disabilities can obtain this
 document and a copy of the submission package in an accessible format
 (e.g., braille, large print, audiotape, or compact disc) on request
-to [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov){.email}.
+to [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov).
 
-<a id="appendix"></a> 
+<a id="appendix"></a>
 
 # Appendix A: Analysis Methods & Response Distributions
 
@@ -992,7 +1016,7 @@ $$\frac{\mu_A - \mu_B}{\frac{(n_A -1) s_A^2 + (n_B -1)s_B^2}{n_A + n_B - 2}}$$
 where $\mu_X$ is the mean of group $X$, $n_X$ is the n-size for group
 $X$, and $s_A$ is the sample standard deviation for group $X$.
 
-## Appendix: Detailed Item Information 
+## Appendix: Detailed Item Information
 
 Histograms showings the distribution of variable values for each item in
 the training data follow. <br>
@@ -1032,8 +1056,8 @@ the training data follow. <br>
 ### Variables with different meanings for each item
 
 Please consult the scoring guides included in "[*Item
-information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)" to 
-map the fields below to the question areas.
+information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)"
+to map the fields below to the question areas.
 
 #### For item VH134067
 
@@ -1142,5 +1166,3 @@ variables were set to missing (NA). The suppression variables, listed in
 the order in which they were prioritized, were the following: "dsex",
 "iep", "accom2", "lep", and "srace10". The variable "year" was *not*
 included in the suppression. <br>
-
-
