@@ -1,3 +1,8 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
 # NAEP Math Automated Scoring Challenge Overview
 
 The [National Center for Education Statistics (NCES)](https://nces.ed.gov/) of the [Institute of Education Sciences](https://ies.ed.gov) invites researchers and assessment practitioners to develop algorithms that predict the scores given by human raters on open-ended items for NAEP mathematics assessment for students in fourth and eighth grades. The purpose of the challenge is to help NAEP to identify effective approaches, expected levels of accuracy, and methods to ensure that automated approaches do not demonstrate bias based on a student's social context or demographic factors.
@@ -151,7 +156,8 @@ For the *Type II* items, the sub-item scores have been combined into a single "a
 
 To make it clear which outcome contestants should predict, we've created a variable "`score_to_predict`" which is the field which will be used as the outcome variable to create predicted scores for. We've also created a variable named "`predict_from`" to identify the text with the most relevant constructed response text to use when creating predicted scores, although as noted, some scores include more than just the text in the scoring decision. Participants are encouraged to use all item parts in their scoring model to improve performance.\
 \
-[INSERT TEXT RE: HUMAN SCORING HERE]
+### How human scorers evaluate and score multi-part items
+The items included in this challenge have been scored by human scorers. To prepare scorers to score multi-part mathematics items, Scoring Trainers begin by analyzing each item to identify the relationships and dependencies among the parts. To assign scores, reliably, scorers are trained about the interdependencies among the item parts and when conducting scoring they read all parts of the item and score them manually, even though some items have fixed or constrained choices. This is an important feature to consider when creating automated item models as the score given to a single part may be influenced by other answers.
 
 ## Summary Item Information
 
