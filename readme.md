@@ -1,7 +1,7 @@
 ---
 output:
-  word_document: default
   html_document: default
+  word_document: default
 ---
 # NAEP Math Automated Scoring Challenge Overview
 
@@ -80,7 +80,7 @@ This challenge seeks to expand on this earlier work to ascertain how accurately 
 
 A custom rubric and scoring guide is created for each item and used to train human scorers. Successful respondents should also build a predictive model specific to each item, using current state-of-the-art practices in natural language processing. As described more extensively in the [Dataset](#dataset) section, for some items the constructed response portion of the item is scored in isolation from other aspects of the response, and in other items there is an overall score in which the predicted score will incorporate results from calculations in addition to the constructed response.
 
-Detailed item information is [available](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf) and the training guides used for human scorers are included in the classified dataset to approved participants. Training data from prior human scoring administrations will be provided for all items to participants.
+Detailed item information is [available](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf) and the training guides used for human scorers are included in the classified dataset to approved participants. Training data from prior human scoring administrations will be provided for all items to participants.
 
 In addition to providing a set of predicted scores for these items, successful respondents to this Challenge will provide a technical report that describes the data pre-processing, model training, and model performance information that was used to create the predicted scores. Responses must include analyses to ensure that the predictions are not systematically different from human-assigned scores by student social context or demographic information (i.e that bias is not observed); algorithm accuracy should be similar for students from all backgrounds and not exhibit bias. Student information provided includes Race/ethnicity, sex/gender, English language learner status, individualized education plans, and accommodations.
 
@@ -140,7 +140,7 @@ Participants will be provided access to digital files that contain information r
 
 Information for 10 items will be provided for this challenge and eligible entries will provide predicted scores for every student response. These items have been reviewed to ensure that the content is appropriate to natural language processing (e.g. "explain your answer") and that there is sufficient distribution of responses to provide a meaningful prediction challenge. The data will be split into a training dataset and a test dataset.
 
-The training dataset will be provided first and then a test dataset (with responses only) will be provided **one week** before the challenge deadline. Detailed information about responses included for each item is provided in the "Variables with different meanings for each item" section below and in the scoring guides included in the [*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf) file.
+The training dataset will be provided first and then a test dataset (with responses only) will be provided **one week** before the challenge deadline. Detailed information about responses included for each item is provided in the "Variables with different meanings for each item" section below and in the scoring guides included in the [*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf) file.
 
 ## Data File Information
 
@@ -152,7 +152,7 @@ We have classified the 10 items into *Type I* and *Type II* for the purpose of a
 \
 There are six *Type I* items which are composed of multiple parts that each have a score and response fields. For the purpose of the challenge, participants are requested to score one part of the item which contains a section that is potentially scorable using NLP. For the four other items, called *Type II* items here, there are multiple parts within an item; however, these parts are dependently linked portions of the item and, as such, were assigned a single score that encompasses the responses contained within two or more parts.
 
-For the *Type II* items, the sub-item scores have been combined into a single "assigned_score" variable which is described in the common variables table above. The original part scores are also included and can be decoded using the item scoring guides provided in "[*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)".
+For the *Type II* items, the sub-item scores have been combined into a single "assigned_score" variable which is described in the common variables table above. The original part scores are also included and can be decoded using the item scoring guides provided in "[*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf)".
 
 To make it clear which outcome contestants should predict, we've created a variable "`score_to_predict`" which is the field which will be used as the outcome variable to create predicted scores for. We've also created a variable named "`predict_from`" to identify the text with the most relevant constructed response text to use when creating predicted scores, although as noted, some scores include more than just the text in the scoring decision. Participants are encouraged to use all item parts in their scoring model to improve performance.\
 \
@@ -502,7 +502,7 @@ Histograms showings the distribution of variable values for each item in the tra
 
 ### Variables with different meanings for each item
 
-Please consult the scoring guides included in "[*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge_Version_6.pdf)" to map the fields below to the question areas.
+Please consult the scoring guides included in "[*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf)" to map the fields below to the question areas.
 
 #### For item VH134067
 
