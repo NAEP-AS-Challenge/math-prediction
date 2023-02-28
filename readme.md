@@ -163,25 +163,25 @@ The items included in this challenge have been scored by human scorers. To prepa
 
 The following items and number of responses are provided in the dataset. Definitions of the *score type* and how IRR is calculated are provided further below. Approximately 5% of the NAEP item responses were double scored. Quadradic Weighted Kappa (QWK) was calculated to estimate the inter-rater reliability for the double-scored responses. The number of responses, inter-rater reliability, score point range, and item type are provided below.
 
-| item     |   irr | min | max | test  | train  | score_type |
-|:---------|------:|:----|:----|:------|:-------|:-----------|
-| VH134067 | 0.966 | 1   | 2   | 4,483 | 40,346 | Type II    |
-| VH139380 | 0.981 | 1   | 3   | 2,045 | 18,404 | Type II    |
-| VH266015 | 0.963 | 1   | 4   | 1,927 | 17,340 | Type I     |
-| VH266510 | 0.933 | 1   | 3   | 4,502 | 40,518 | Type II    |
-| VH269384 | 0.970 | 1   | 4   | 1,966 | 17,695 | Type I     |
-| VH271613 | 0.977 | 1   | 4   | 4,175 | 37,573 | Type I     |
-| VH302907 | 0.980 | 1   | 2   | 4,357 | 39,210 | Type II    |
-| VH304954 | 0.985 | 1   | 3   | 2,790 | 25,107 | Type II    |
-| VH507804 | 0.991 | 1   | 4   | 2,000 | 17,995 | Type I     |
-| VH525628 | 0.957 | 1   | 3   | 1,946 | 17,509 | Type II    |
+|item     |  QWK | min| max| test | train |score type |
+|:--------|-----:|---:|---:|-----:|------:|:---------:|
+|VH134067 | 0.966| 1  | 2  | 4,483| 40,343| Type I    |
+|VH139380 | 0.981| 1  | 3  | 2,018| 18,157| Type I    |
+|VH266015 | 0.963| 1  | 4  | 1,776| 15,987| Type II   |
+|VH266510 | 0.933| 1  | 3  | 4,296| 38,667| Type I    |
+|VH269384 | 0.970| 1  | 4  | 1,758| 15,826| Type II   |
+|VH271613 | 0.975| 1  | 4  | 3,096| 27,858| Type II   |
+|VH302907 | 0.980| 1  | 2  | 4,241| 38,173| Type I    |
+|VH304954 | 0.984| 1  | 3  | 2,743| 24,686| Type I    |
+|VH507804 | 0.991| 1  | 4  | 1,827| 16,443| Type II   |
+|VH525628 | 0.956| 1  | 3  | 1,808| 16,275| Type I    |
 
 ## Variables Common to All Items
 
 Some variables about the item, responses, and respondent were available for all items in the source data. Those variables are described in the table below.
 
 | Variable         | Description                                                                                             | Type    | Values (if constrained)                                                                                                                                                               |
-|:----------------|:----------------|:----------------|:-------------------|
+|:-----------------|:--------------------------------------------------------------------------------------------------------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
 | accession        | Item number                                                                                             | string  | e.g. "VH139087"                                                                                                                                                                       |
 | score_to_predict | Outcome to predict                                                                                      | integer | e.g. 1, 2, 3                                                                                                                                                                          |
@@ -192,14 +192,15 @@ Some variables about the item, responses, and respondent were available for all 
 | accom2           | Student accommodations. Note: Item VH304954 did not have accom2 so for this item accom2 is entirely NA. | integer | 1='Accommodated', 2='Not accommodated'                                                                                                                                                |
 | iep              | IEP                                                                                                     | integer | 1=SD, 2=Not SD                                                                                                                                                                        |
 | lep              | English learner status                                                                                  | integer | 1=English Learner, 2=Not English Learner                                                                                                                                              |
-| rater_1          | Score given by human rater (component-scored items only)                                                | string  | e.g. 1A, 2B, 3A ...                                                                                                                                                                   |
-| pta_rtr1         | Part A human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
-| ptb_rtr1         | Part B human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
-| ptc_rtr1         | Part C human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
+| rater_1          | Score given by human rater (component-scored items only)                                                | string  | e.g. 1A, 2B, 3A …                                                                                                                                                                     |
+| pta_rtr1         | Part A human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A …                                                                                                                                                                   |
+| ptb_rtr1         | Part B human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A …                                                                                                                                                                   |
+| ptc_rtr1         | Part C human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A …                                                                                                                                                                   |
 | composite        | Composite score (atomic-scored items only)                                                              | integer | e.g. 1, 2, 3                                                                                                                                                                          |
-| score            | Score (containing partial credit codes)                                                                 | string  | e.g. 1A, 2B, 3A ...                                                                                                                                                                   |
-| assigned_score   | Simplified numeric score total for item (1, 2, 3...) from either "rater_1" or "composite"               | integer | 1, 2, 3 ...                                                                                                                                                                           |
+| score            | Score (containing partial credit codes)                                                                 | string  | e.g. 1A, 2B, 3A …                                                                                                                                                                     |
+| assigned_score   | Simplified numeric score total for item (1, 2, 3...) from either "rater_1" or "composite"               | integer | 1, 2, 3 …                                                                                                                                                                             |
 | ee_use           | Item used equation editor                                                                               | integer | 0=no EE use, 1=EE use                                                                                                                                                                 |
+
 
 ### Dataset processing
 
