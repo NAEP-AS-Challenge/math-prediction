@@ -13,15 +13,15 @@ Assessment Constructed Response Items using Natural Language Processing.
 
 ### Key Dates
 
-| Milestone             | Date      |
+ Milestone             | Date      |
 |-----------------------|-----------|
-| Challenge Opens       | 2/21/23   |
-| Application Deadline  | 3/20/23   |
-| Test Dataset Released | 5/1/23    |
-| Submission Deadline   | 5/8/23    |
+| Challenge Opens       | 3/7/23   |
+| Application Deadline  | 4/17/23   |
+| Test Dataset Released | 5/22/23    |
+| Submission Deadline   | 5/25/23    |
 | Winners Announced     | June 2023 |
 
-**An informational webinar will be held on March 7th 2023 \@ 12:00 ET. Attendance at the webinar is not required to participate in the challenge.**
+**An informational webinar will be held on March 21th 2023 \@ 12:00 ET. Attendance at the webinar is not required to participate in the challenge.**
 
 Advance webinar registration required at the [following URL](https://www.eventbrite.com/e/rfi-for-naep-math-automated-scoring-challenge-tickets-529659705437).
 
@@ -347,12 +347,12 @@ Participation in the prediction challenge and results that are within the 10 mos
 
 | Activity                                   | Date                |
 |--------------------------------------------|---------------------|
-| Challenge Posted                           | 2/21/23             |
-| Request for Information Webinar            | 3/7/23              |
-| Application Deadline                       | 3/20/23 at 11:59 ET |
-| Training Data Available                    | 2/23/23-4/28/23     |
-| Test Data Provided                         | 5/1/23              |
-| Submission Deadline (Report & Predictions) | 5/8/23 @at 11:59 ET |
+| Challenge Posted                           | 3/7/23             |
+| Request for Information Webinar            | 3/21/23              |
+| Application Deadline                       | 4/17/23 at 11:59 ET |
+| Training Data Available                    | 3/8/23-5/25/2023     |
+| Test Data Provided                         | 5/22/23              |
+| Submission Deadline (Report & Predictions) | 5/26/23 @at 11:59 ET |
 | Winners Announced                          | June 2023           |
 
 <a id="terms"></a>
