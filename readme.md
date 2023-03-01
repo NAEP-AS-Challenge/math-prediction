@@ -1,8 +1,3 @@
----
-output:
-  html_document: default
-  word_document: default
----
 # NAEP Math Automated Scoring Challenge Overview
 
 The [National Center for Education Statistics (NCES)](https://nces.ed.gov/) of the [Institute of Education Sciences](https://ies.ed.gov) invites researchers and assessment practitioners to develop algorithms that predict the scores given by human raters on open-ended items for NAEP mathematics assessment for students in fourth and eighth grades. The purpose of the challenge is to help NAEP to identify effective approaches, expected levels of accuracy, and methods to ensure that automated approaches do not demonstrate bias based on a student's social context or demographic factors.
@@ -18,15 +13,15 @@ Assessment Constructed Response Items using Natural Language Processing.
 
 ### Key Dates
 
-| Milestone             | Date      |
+ Milestone             | Date      |
 |-----------------------|-----------|
-| Challenge Opens       | 2/21/23   |
-| Application Deadline  | 3/20/23   |
-| Test Dataset Released | 5/1/23    |
-| Submission Deadline   | 5/8/23    |
+| Challenge Opens       | 3/7/23   |
+| Application Deadline  | 4/17/23   |
+| Test Dataset Released | 5/22/23    |
+| Submission Deadline   | 5/25/23    |
 | Winners Announced     | June 2023 |
 
-**An informational webinar will be held on March 7th 2023 \@ 12:00 ET. Attendance at the webinar is not required to participate in the challenge.**
+**An informational webinar will be held on March 21th 2023 \@ 12:00 ET. Attendance at the webinar is not required to participate in the challenge.**
 
 Advance webinar registration required at the [following URL](https://www.eventbrite.com/e/rfi-for-naep-math-automated-scoring-challenge-tickets-529659705437).
 
@@ -155,7 +150,7 @@ There are six *Type I* items which are composed of multiple parts that each have
 For the *Type II* items, the sub-item scores have been combined into a single "assigned_score" variable which is described in the common variables table above. The original part scores are also included and can be decoded using the item scoring guides provided in "[*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf)".
 
 To make it clear which outcome contestants should predict, we've created a variable "`score_to_predict`" which is the field which will be used as the outcome variable to create predicted scores for. We've also created a variable named "`predict_from`" to identify the text with the most relevant constructed response text to use when creating predicted scores, although as noted, some scores include more than just the text in the scoring decision. Participants are encouraged to use all item parts in their scoring model to improve performance.\
-\
+
 ### How human scorers evaluate and score multi-part items
 The items included in this challenge have been scored by human scorers. To prepare scorers to score multi-part mathematics items, Scoring Trainers begin by analyzing each item to identify the relationships and dependencies among the parts. To assign scores, reliably, scorers are trained about the interdependencies among the item parts and when conducting scoring they read all parts of the item and score them manually, even though some items have fixed or constrained choices. This is an important feature to consider when creating automated item models as the score given to a single part may be influenced by other answers.
 
@@ -353,12 +348,12 @@ Participation in the prediction challenge and results that are within the 10 mos
 
 | Activity                                   | Date                |
 |--------------------------------------------|---------------------|
-| Challenge Posted                           | 2/21/23             |
-| Request for Information Webinar            | 3/7/23              |
-| Application Deadline                       | 3/20/23 at 11:59 ET |
-| Training Data Available                    | 2/23/23-4/28/23     |
-| Test Data Provided                         | 5/1/23              |
-| Submission Deadline (Report & Predictions) | 5/8/23 @at 11:59 ET |
+| Challenge Posted                           | 3/7/23             |
+| Request for Information Webinar            | 3/21/23              |
+| Application Deadline                       | 4/17/23 at 11:59 ET |
+| Training Data Available                    | 3/8/23-5/25/2023     |
+| Test Data Provided                         | 5/22/23              |
+| Submission Deadline (Report & Predictions) | 5/26/23 @at 11:59 ET |
 | Winners Announced                          | June 2023           |
 
 <a id="terms"></a>
