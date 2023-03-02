@@ -25,7 +25,7 @@ Assessment Constructed Response Items using Natural Language Processing.
 
 Advance webinar registration required at the [following URL](https://www.eventbrite.com/e/rfi-for-naep-math-automated-scoring-challenge-tickets-529659705437).
 
-In order to participate and receive the datasets, it is necessary to complete data security agremenents. More information about eligibility requirements is [provided below](#eligibility) and the [NAEP Secure Data Access Application is available for download](resources/Data_Agreement_Forms.zip). This application must be completed and approved by IES personnel before an applicant will be provided access to the response data. Completed applications (please enrypt before transmission) should be sent to: [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov?subject=Math%20Challenge).
+In order to participate and receive the datasets, it is necessary to complete data security agreements. More information about eligibility requirements is [provided below](#eligibility) and the [NAEP Secure Data Access Application is available for download](resources/Data_Agreement_Forms.zip). This application must be completed and approved by IES personnel before an applicant will be provided access to the response data. Completed applications (please encrypt before transmission) should be sent to: [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov?subject=Math%20Challenge).
 
 # Table of Contents
 
@@ -99,7 +99,9 @@ Shermis, Mark D. 2014. "State-of-the-Art Automated Essay Scoring: Competition, R
 
 # Eligibility Information
 
-Institutions and individuals that have the ability and capacity to conduct research are eligible to apply. Eligible applicants include, but are not limited to, nonprofit and for-profit organizations and public and private agencies and institutions, such as colleges and universities. Due to prior access to the items and test data, current NAEP Alliance member organizations are not eligible to participate. Organizations must be located within the United States due to data privacy requirements. In addition to these criteria, organizations must demonstrate the following requirements.
+Institutions and individuals ("applicants") that have the ability and capacity to conduct research are eligible to apply. Eligible applicants include, but are not limited to, individual, nonprofit and for-profit organizations and public and private agencies and institutions, such as colleges and universities. Due to prior access to the items and test data, current NAEP Alliance member organizations are not eligible to participate.
+
+We anticipate that teams of individuals will participate. Applicants do not need to be U.S. citizens, but must be located within the United States due to data privacy requirements. In addition to these criteria, applicants must demonstrate the following requirements.
 
 1.  **Prior Experience with Sensitive Data.** Applicants must have prior experience handling confidential federal or education data data in a secure manner. Relevant experience includes (but is not limited to): collecting, processing, and or/analyzing confidential data on contract with a U.S. government agency; prior successful application for an IES restricted-use data license; approval to analyze confidential data at other federal agencies (for example, to access data within a Federal Statistical Research Data Center (FSRDC); agreements with K-12 school district/state departments of education to access confidential or classified data; or agreements with other local or federal agencies to safely process confidential data.
 
@@ -177,7 +179,7 @@ The following items and number of responses are provided in the dataset. Definit
 Some variables about the item, responses, and respondent were available for all items in the source data. Those variables are described in the table below.
 
 | Variable         | Description                                                                                             | Type    | Values (if constrained)                                                                                                                                                               |
-|:----------|:----------------|:----------|:--------------------------------|
+|:--------------|:--------------|:--------------|:----------------------------|
 | student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
 | accession        | Item number                                                                                             | string  | e.g. "VH139087"                                                                                                                                                                       |
 | score_to_predict | Outcome to predict                                                                                      | integer | e.g. 1, 2, 3                                                                                                                                                                          |
@@ -294,7 +296,7 @@ Penfield, R. D. 2016. "Fairness in Test Scoring." In *Fairness in Educational As
 
 # Participation Process
 
-Interested participants must begin by reviewing the eligibility criteria, timeline, and other materials and ensuring that they are well-suited to participate. Once completed, interested participants submit an application for data access to participate by first completing the required security authorization forms to access NCES Confidential materials. These are provided at: "[NAEP Secure Data Access Application](resources/Data_Agreement_Forms.zip)".
+Interested participants must begin by reviewing the eligibility criteria, timeline, and other materials and ensuring that they are well-suited to participate. Once completed, interested participants should submit an application for data access to participate by first completing the required security authorization forms to access NCES Confidential materials. These are provided at: "[NAEP Secure Data Access Application](resources/Data_Agreement_Forms.zip)".
 
 Completed data applications should be encrypted with a password and sent via email to: [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov) by the deadline as stated in the "timeline" section.
 
@@ -344,7 +346,7 @@ The potential prize purse is up to \$60,000 per team.
 
 -   The first-place prize for the **interpretability analysis** challenge is \$20,000, with up to 2 runner-up prizes of \$5,000 each.
 
-Participation in the prediction challenge and results that are within the 10 most accurate submissions is required for participation in the interpretability challenge.
+Prizes will be awarded to a single organization or lead contact, and distribution of funds is at the discretion of the participating team. Participation in the prediction challenge and results that are within the 10 most accurate submissions is required for participation in the interpretability challenge.
 
 <a id="timeline"></a>
 
