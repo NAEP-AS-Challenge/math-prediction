@@ -1,6 +1,6 @@
 # NAEP Math Automated Scoring Challenge Overview
 
-The [National Center for Education Statistics (NCES)](https://nces.ed.gov/) of the [Institute of Education Sciences](https://ies.ed.gov) invites researchers and assessment practitioners to develop algorithms that predict the scores given by human raters on open-ended items for NAEP mathematics assessment for students in fourth and eighth grades. The purpose of the challenge is to help NAEP to identify effective approaches, expected levels of accuracy, and methods to ensure that automated approaches do not demonstrate bias based on a student's social context or demographic factors.
+The [National Center for Education Statistics (NCES)](https://nces.ed.gov/) invites researchers and assessment practitioners to develop algorithms that predict the scores given by human raters on open-ended items for mathematics assessment for students in fourth and eighth grades in the [National Assessment of Educational Progress (NAEP)](https://www.nationsreportcard.gov/) assessment. The purpose of the challenge is to help NAEP to identify effective approaches, expected levels of accuracy, and methods to ensure that automated approaches do not demonstrate bias based on a student's social context or demographic factors.
 
 This Challenge requires that submissions provide predicted human scores and are transparent in their submissions by explaining the methods used to obtain those results. In addition to the score prediction challenge, participants are invited to create submissions for an "innovative interpretability challenge" that can help explain algorithm functioning and provide evidence for the validity of the algorithm in measuring student responses. Submission to the score prediction challenge (and accuracy within top 10 entries) is required for eligibility for the interpretability challenge.
 
@@ -318,17 +318,19 @@ Individuals with disabilities who need an accommodation or auxiliary aid in conn
 
 To submit your predicted scores, please use the following format to modify the test dataset provided for each item.
 
-1.  Delete the column "predict_from" that contains the student response text (for data security reasons).  Please do not submit any files that contain the text of student responses.
+1.  Delete all columns except for "student_id" 
 
-2.  Add a column "predicted_score" and enter your predicted score in that column. **Only one predicted score should be provided**.
+2.  Add a column "predicted_score" and enter your predicted score in that column. **Only one predicted score per response should be provided**.
 
 3.  Add a column "participant" and put in the email address for the project lead contact (you only need to enter in one row).
 
-4.  Save the file using the same original filename in .CSV format.
+4. Your final dataset should only have three columns: "student_id", "predicted_score", and "participant".
 
-5.  Repeat for all items and save into a single folder/directory.
+5.  Save the file using the same original filename in .CSV format.
 
-6.  Zip that folder/directory. Add your technical report and upload to the secure site that was provided via email.
+6.  Repeat for all items and save into a single folder/directory.
+
+7.  Zip that folder/directory. Add your technical report and upload to the secure site that was provided via email.
 
 <a id="prizes"></a>
 
