@@ -1,9 +1,3 @@
----
-output: pdf_document
----
-
-------------------------------------------------------------------------
-
 # NAEP Math Automated Scoring Challenge Overview
 
 The [National Center for Education Statistics (NCES)](https://nces.ed.gov/) invites researchers and assessment practitioners to develop algorithms that predict the scores given by human raters on open-ended items for mathematics assessment for students in fourth and eighth grades in the [National Assessment of Educational Progress (NAEP)](https://www.nationsreportcard.gov/) assessment. The purpose of the challenge is to help NAEP to identify effective approaches, expected levels of accuracy, and methods to ensure that automated approaches do not demonstrate bias based on a student's social context or demographic factors.
