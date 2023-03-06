@@ -1,8 +1,16 @@
+---
+output: pdf_document
+---
+
+------------------------------------------------------------------------
+
 # NAEP Math Automated Scoring Challenge Overview
 
 The [National Center for Education Statistics (NCES)](https://nces.ed.gov/) invites researchers and assessment practitioners to develop algorithms that predict the scores given by human raters on open-ended items for mathematics assessment for students in fourth and eighth grades in the [National Assessment of Educational Progress (NAEP)](https://www.nationsreportcard.gov/) assessment. The purpose of the challenge is to help NAEP to identify effective approaches, expected levels of accuracy, and methods to ensure that automated approaches do not demonstrate bias based on a student's social context or demographic factors.
 
 This Challenge requires that submissions provide predicted human scores and are transparent in their submissions by explaining the methods used to obtain those results. In addition to the score prediction challenge, participants are invited to create submissions for an "innovative interpretability challenge" that can help explain algorithm functioning and provide evidence for the validity of the algorithm in measuring student responses. Submission to the score prediction challenge (and accuracy within top 10 entries) is required for eligibility for the interpretability challenge.
+
+For an accessible version of this document, please see the [Accessibility](#accessibility) section. This document is also available in [PDF](readme.pdf) and [HTML](readme.html) formats for offline viewing.
 
 ## Challenge Details
 
@@ -61,9 +69,9 @@ Secure server information will be provided to approved participants via the cont
 
 ## Background
 
-Automated Scoring using natural language processing (NLP) is a well-developed application of artificial intelligence in education. Results for predicting human assigned scores for essay items have been demonstrated to be on-par with the inter-rater reliability of human scorers for well-developed items (Shermis 2014). Currently, the National Assessment of Educational Progress (NAEP) includes constructed responses[^readme-1] in a large proportion of mathematics items to provide students with an opportunity to explain their reasoning or the process they used to respond to a mathematics item. While many of these items can be scored using automated rule-based methods, others contain more complex responses that cannot be accurately scored using these methods. Currently, NAEP alliance members assemble teams of human scorers who score millions of student responses to NAEP's assessments.
+Automated Scoring using natural language processing (NLP) is a well-developed application of artificial intelligence in education. Results for predicting human assigned scores for essay items have been demonstrated to be on-par with the inter-rater reliability of human scorers for well-developed items (Shermis 2014). Currently, the National Assessment of Educational Progress (NAEP) includes constructed responses[^1] in a large proportion of mathematics items to provide students with an opportunity to explain their reasoning or the process they used to respond to a mathematics item. While many of these items can be scored using automated rule-based methods, others contain more complex responses that cannot be accurately scored using these methods. Currently, NAEP alliance members assemble teams of human scorers who score millions of student responses to NAEP's assessments.
 
-[^readme-1]: Constructed response question types ask students to enter either a longer written response or a series of shorter inter-related responses Depending on the subject area assessed, students may be asked to provide an explanation, an interpretation, a justification, or to describe or show the steps for the solution of a problem. These questions require longer written responses than short constructed responses."
+[^1]: Constructed response question types ask students to enter either a longer written response or a series of shorter inter-related responses Depending on the subject area assessed, students may be asked to provide an explanation, an interpretation, a justification, or to describe or show the steps for the solution of a problem. These questions require longer written responses than short constructed responses."
 
 A [public data challenge](https://github.com/NAEP-AS-Challenge/info/blob/main/results.md) held in 2021 demonstrated that NAEP's constructed response *reading items* can be scored successfully using natural language processing. The successful NLP approaches used in the prior challenge used large language models, which contain billions of parameters. These models are intrinsically difficult to understand by human reviewers. The inability to understand how algorithms calculate predictions makes it difficult to have confidence in the algorithm, despite high degrees of accuracy (Doshi-Velez and Kim 2017). This problem is not unique to education, and the definition of interpretability, let alone consistent criteria to achieve it, have not been established (Lipton 2018). As a result, this challenge provides an opportunity and incentive for teams to conduct additional work in this area.
 
@@ -179,7 +187,7 @@ The following items and number of responses are provided in the dataset. Definit
 Some variables about the item, responses, and respondent were available for all items in the source data. Those variables are described in the table below.
 
 | Variable         | Description                                                                                             | Type    | Values (if constrained)                                                                                                                                                               |
-|:--------------|:--------------|:--------------|:----------------------------|
+|:----------------|:----------------|:----------------|:-------------------|
 | student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
 | accession        | Item number                                                                                             | string  | e.g. "VH139087"                                                                                                                                                                       |
 | score_to_predict | Outcome to predict                                                                                      | integer | e.g. 1, 2, 3                                                                                                                                                                          |
@@ -444,6 +452,8 @@ By participating in the Challenge, each entrant hereby agrees that occasionally,
 
 Please contact [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov) should you have any comments or questions about these Official Rules, Terms, and Conditions.
 
+<a id="accessibility"></a
+
 ## Other Information
 
 Accessible Format: Individuals with disabilities can obtain this document and a copy of the submission package in an accessible format (e.g., braille, large print, audiotape, or compact disc) on request to [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov).
@@ -586,8 +596,6 @@ To minimize the risk of statistical disclosure, suppression was applied to demog
 ### Response Counts
 
 <img src="files_for_readme/doublescored_VH134067_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH139380_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH266015_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH266510_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH269384_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH271613_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH302907_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH304954_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH507804_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH525628_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
-
-<a id="references"></a> \# References
 
 <div>
 
