@@ -153,7 +153,7 @@ There are six *Type I* items which are composed of multiple parts that each have
 
 For the *Type II* items, the sub-item scores have been combined into a single "assigned_score" variable which is described in the common variables table above. The original part scores are also included and can be decoded using the item scoring guides provided in [*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf).
 
-To make it clear which outcome contestants should predict, we've created a variable "`score_to_predict`" which is the field which will be used as the outcome variable to create predicted scores for. We've also created a variable named "`predict_from`" to identify the text with the most relevant constructed response text to use when creating predicted scores, although as noted, some scores include more than just the text in the scoring decision. Participants are encouraged to use all item parts in their scoring model to improve performance.\
+To make it clear which outcome contestants should predict, we've created a variable "`score_to_predict`" which is the field which will be used as the outcome variable to create predicted scores for. We've also created a variable named "`predict_from`" to identify the text with the most relevant constructed response text to use when creating predicted scores, although as noted, some scores include more than just the text in the scoring decision. Participants are encouraged to use all item parts in their scoring model to improve performance.
 
 ### How human scorers evaluate and score multi-part items
 
@@ -352,7 +352,7 @@ Prizes will be awarded to a single organization or lead contact, and distributio
 
 <a id="timeline"></a>
 
-# Timeline {#timeline}
+# Timeline 
 
 | Activity                                   | Date                |
 |--------------------------------------------|---------------------|
