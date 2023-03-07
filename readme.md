@@ -352,7 +352,7 @@ Prizes will be awarded to a single organization or lead contact, and distributio
 
 <a id="timeline"></a>
 
-# Timeline {#timeline}
+# Timeline 
 
 | Activity                                   | Date                 |
 |--------------------------------------------|----------------------|
