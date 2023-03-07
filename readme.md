@@ -143,7 +143,7 @@ The training dataset will be provided first and then a test dataset (with respon
 
 ## Data File Information
 
-Data for the competition has been aggregated into a single file from multiple test items. For this challenge you will be using items from the grade 4 and grade 8 NAEP Math Assessments that were administered in 2017 and 2019. Information about the aggregated file and how it was prepared, along with general instructions for the challenge and data handling rules are contained below. Questions about the challenge should be posted to the Github "issues" page for the challenge: <https://github.com/naep-as-challenge>
+Data for the competition has been aggregated into a single file from multiple test items. For this challenge you will be using items from the grade 4 and grade 8 NAEP Math Assessments that were administered in 2017 and 2019. Information about the aggregated file and how it was prepared, along with general instructions for the challenge and data handling rules are contained below. Questions about the challenge should be posted to the Github "issues" page for the challenge: <https://github.com/naep-as-challenge>.
 
 ## Item Classification & Dataset Processing
 
@@ -151,7 +151,7 @@ We have classified the 10 items into *Type I* and *Type II* for the purpose of a
 \
 There are six *Type I* items which are composed of multiple parts that each have a score and response fields. For the purpose of the challenge, participants are requested to score one part of the item which contains a section that is potentially scorable using NLP. For the four other items, called *Type II* items here, there are multiple parts within an item; however, these parts are dependently linked portions of the item and, as such, were assigned a single score that encompasses the responses contained within two or more parts.
 
-For the *Type II* items, the sub-item scores have been combined into a single "assigned_score" variable which is described in the common variables table above. The original part scores are also included and can be decoded using the item scoring guides provided in "[*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf)".
+For the *Type II* items, the sub-item scores have been combined into a single "assigned_score" variable which is described in the common variables table above. The original part scores are also included and can be decoded using the item scoring guides provided in [*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf).
 
 To make it clear which outcome contestants should predict, we've created a variable "`score_to_predict`" which is the field which will be used as the outcome variable to create predicted scores for. We've also created a variable named "`predict_from`" to identify the text with the most relevant constructed response text to use when creating predicted scores, although as noted, some scores include more than just the text in the scoring decision. Participants are encouraged to use all item parts in their scoring model to improve performance.\
 
@@ -181,7 +181,7 @@ The following items and number of responses are provided in the dataset. Definit
 Some variables about the item, responses, and respondent were available for all items in the source data. Those variables are described in the table below.
 
 | Variable         | Description                                                                                             | Type    | Values (if constrained)                                                                                                                                                               |
-|:----------------|:----------------|:----------------|:-------------------|
+|:-----------------|:-----------------|:-----------------|:-------------------|
 | student_id       | pseudonymous student ID -- not linkable across item-years                                               | string  | e.g. "xYzq4StVaC"                                                                                                                                                                     |
 | accession        | Item number                                                                                             | string  | e.g. "VH139087"                                                                                                                                                                       |
 | score_to_predict | Outcome to predict                                                                                      | integer | e.g. 1, 2, 3                                                                                                                                                                          |
@@ -192,11 +192,11 @@ Some variables about the item, responses, and respondent were available for all 
 | accom2           | Student accommodations. Note: Item VH304954 did not have accom2 so for this item accom2 is entirely NA. | integer | 1='Accommodated', 2='Not accommodated'                                                                                                                                                |
 | iep              | IEP                                                                                                     | integer | 1=SD, 2=Not SD                                                                                                                                                                        |
 | lep              | English learner status                                                                                  | integer | 1=English Learner, 2=Not English Learner                                                                                                                                              |
-| rater_1          | Score given by human rater (component-scored items only)                                                | string  | e.g. 1A, 2B, 3A ...                                                                                                                                                                   |
-| pta_rtr1         | Part A human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
-| ptb_rtr1         | Part B human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
-| ptc_rtr1         | Part C human rater score (composite items only)                                                         | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
-| composite        | Composite score (atomic-scored items only)                                                              | integer | e.g. 1, 2, 3                                                                                                                                                                          |
+| rater_1          | Score given by human rater (Type II items only)                                                         | string  | e.g. 1A, 2B, 3A ...                                                                                                                                                                   |
+| pta_rtr1         | Part A human rater score                                                                                | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
+| ptb_rtr1         | Part B human rater score                                                                                | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
+| ptc_rtr1         | Part C human rater score                                                                                | string  | e.g. 1, 2A, 2, 3A ...                                                                                                                                                                 |
+| composite        | Composite score                                                                                         | integer | e.g. 1, 2, 3                                                                                                                                                                          |
 | score            | Score (containing partial credit codes)                                                                 | string  | e.g. 1A, 2B, 3A ...                                                                                                                                                                   |
 | assigned_score   | Simplified numeric score total for item (1, 2, 3...) from either "rater_1" or "composite"               | integer | 1, 2, 3 ...                                                                                                                                                                           |
 | ee_use           | Item used equation editor                                                                               | integer | 0=no EE use, 1=EE use                                                                                                                                                                 |
@@ -354,15 +354,15 @@ Prizes will be awarded to a single organization or lead contact, and distributio
 
 # Timeline {#timeline}
 
-| Activity                                   | Date                 |
-|--------------------------------------------|----------------------|
-| Challenge Posted                           | 3/7/23               |
-| Request for Information Webinar            | 3/21/23              |
-| Application Deadline                       | 4/17/23 at 11:59 ET  |
-| Training Data Available                    | 3/8/23-5/25/2023     |
-| Test Data Provided                         | 5/22/23              |
-| Submission Deadline (Report & Predictions) | 5/26/23 @at 11:59 ET |
-| Winners Announced                          | June 2023            |
+| Activity                                   | Date                |
+|--------------------------------------------|---------------------|
+| Challenge Posted                           | 3/7/23              |
+| Request for Information Webinar            | 3/21/23 at 12:00 ET |
+| Application Deadline                       | 4/17/23 at 11:59 ET |
+| Training Data Available                    | 3/8/23-5/25/2023    |
+| Test Data Provided                         | 5/22/23             |
+| Submission Deadline (Report & Predictions) | 5/26/23 at 11:59 ET |
+| Winners Announced                          | June 2023           |
 
 <a id="terms"></a>
 
@@ -446,7 +446,7 @@ By participating in the Challenge, each entrant hereby agrees that occasionally,
 
 Please contact [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov) should you have any comments or questions about these Official Rules, Terms, and Conditions.
 
-<a id="accessibility"></a
+<a id="accessibility"></a>
 
 ## Other Information
 
@@ -492,7 +492,7 @@ where $\mu_X$ is the mean of group $X$, $n_X$ is the n-size for group $X$, and $
 
 ### Variables with different meanings for each item
 
-Please consult the scoring guides included in "[*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf)" to map the fields below to the question areas.
+Please consult the scoring guides included in [*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf) to map the fields below to the question areas.
 
 #### For item VH134067
 
