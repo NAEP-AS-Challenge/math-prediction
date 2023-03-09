@@ -158,7 +158,7 @@ For the *Type II* items, the sub-item scores have been combined into a single "`
 
 To make it clear which outcome contestants should predict, we've created a variable "`score_to_predict`" which is the field which will be used as the outcome variable to create predicted scores for. We've also created a variable named "`predict_from`" to identify the text with the most relevant constructed response text to use when creating predicted scores, although as noted, some scores include more than just the text in the scoring decision. Participants are encouraged to use all item parts in their scoring model to improve performance.
 
-For the Type II items, the original part scores (`pta_rtr1` , `ptb_rtr1` , `ptc_rtr1` ) are included in the trainingdata file and can be decoded using the item scoring guides provided in [*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf). In the *testing* data, the part score variables have been set to missing, along with: `composite` , `rater_1` , `score` , `assigned_score` , and `score_to_predict` .
+For the Type II items, the original part scores (`pta_rtr1` , `ptb_rtr1` , `ptc_rtr1` ) are included in the training data file and can be decoded using the item scoring guides provided in [*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf). In the *testing* data, the part score variables have been set to missing, along with: `composite` , `rater_1` , `score` , `assigned_score` , and `score_to_predict` .
 
 ### How human scorers evaluate and score multi-part items
 
