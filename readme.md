@@ -149,11 +149,16 @@ Data for the competition has been aggregated into a single file from multiple te
 
 We have classified the 10 items into *Type I* and *Type II* for the purpose of automated scoring; please note that these are categories created only for the purpose of this challenge for the sake of clarity in this automated scoring context.\
 \
-There are six *Type I* items which are composed of multiple parts that each have a score and response fields. For the purpose of the challenge, participants are requested to score one part of the item which contains a section that is potentially scorable using NLP. For the four other items, called *Type II* items here, there are multiple parts within an item; however, these parts are dependently linked portions of the item and, as such, were assigned a single score that encompasses the responses contained within two or more parts.
+There are four *Type I* items which are composed of multiple parts that each have a single score based on all parts of the item (`rater_1` in the data dictionary). For the purpose of the challenge, participants are requested to score one part of the item which contains a section that is potentially scorable using NLP. For the six other items, called *Type II* items here, there are multiple parts within an item; however, these parts are dependently linked portions of the item and, as such, were assigned a single score that encompasses the responses contained within two or more parts.  Each part was assigned a sub-item part score (`pta_rtr1` - `ptc_rtr1` in data dictionary). For Type II items, these parts are combined to create a single item level score ( `composite` in data dictionary). Note: Each part score (e.g. `pta_rtr1` ) may itself be based on multiple, dependently linked parts. For example,
+`pta_rtr1` may be based on a multiple choice question and a related constructed response that must both be considered in scoring decisions.
 
-For the *Type II* items, the sub-item scores have been combined into a single "assigned_score" variable which is described in the common variables table above. The original part scores are also included and can be decoded using the item scoring guides provided in [*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf).
+For the purpose of the challenge, participants are requested to score one part of the item which contains a section that is potentially scorable using NLP.
+
+For the *Type II* items, the sub-item scores have been combined into a single "`assigned_score`" variable which is described in the common variables table above. The original part scores are also included and can be decoded using the item scoring guides provided in [*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf).
 
 To make it clear which outcome contestants should predict, we've created a variable "`score_to_predict`" which is the field which will be used as the outcome variable to create predicted scores for. We've also created a variable named "`predict_from`" to identify the text with the most relevant constructed response text to use when creating predicted scores, although as noted, some scores include more than just the text in the scoring decision. Participants are encouraged to use all item parts in their scoring model to improve performance.
+
+For the Type II items, the original part scores (`pta_rtr1` , `ptb_rtr1` , `ptc_rtr1` ) are included in the training data file and can be decoded using the item scoring guides provided in [*Item information.zip*](resources/Item_Descriptions_for_NAEP_Math_Scoring_Challenge.pdf). In the *testing* data, the part score variables have been set to missing, along with: `composite` , `rater_1` , `score` , `assigned_score` , and `score_to_predict` .
 
 ### How human scorers evaluate and score multi-part items
 
@@ -166,15 +171,15 @@ The following items and number of responses are provided in the dataset. Definit
 | item     |   QWK | min | max |  test |  train | score type |
 |:---------|------:|----:|----:|------:|-------:|:----------:|
 | VH134067 | 0.966 |   1 |   2 | 4,483 | 40,343 |   Type I   |
-| VH139380 | 0.981 |   1 |   3 | 2,018 | 18,157 |   Type I   |
-| VH266015 | 0.963 |   1 |   4 | 1,776 | 15,987 |  Type II   |
-| VH266510 | 0.933 |   1 |   3 | 4,296 | 38,667 |   Type I   |
+| VH139380 | 0.981 |   1 |   3 | 2,018 | 18,157 |  Type II   |
+| VH266015 | 0.963 |   1 |   4 | 1,776 | 15,987 |   Type I   |
+| VH266510 | 0.933 |   1 |   3 | 4,296 | 38,667 |  Type II   |
 | VH269384 | 0.970 |   1 |   4 | 1,758 | 15,826 |  Type II   |
 | VH271613 | 0.975 |   1 |   4 | 3,096 | 27,858 |  Type II   |
 | VH302907 | 0.980 |   1 |   2 | 4,241 | 38,173 |   Type I   |
-| VH304954 | 0.984 |   1 |   3 | 2,743 | 24,686 |   Type I   |
-| VH507804 | 0.991 |   1 |   4 | 1,827 | 16,443 |  Type II   |
-| VH525628 | 0.956 |   1 |   3 | 1,808 | 16,275 |   Type I   |
+| VH304954 | 0.984 |   1 |   3 | 2,743 | 24,686 |  Type II   |
+| VH507804 | 0.991 |   1 |   4 | 1,827 | 16,443 |   Type I   |
+| VH525628 | 0.956 |   1 |   3 | 1,808 | 16,275 |  Type II   |
 
 ## Variables Common to All Items
 
