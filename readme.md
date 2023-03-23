@@ -23,11 +23,12 @@ Assessment Constructed Response Items using Natural Language Processing.
 | Submission Deadline   | 5/25/23   |
 | Winners Announced     | June 2023 |
 
-**An informational webinar will be held on March 21th 2023 \@ 12:00 ET. Attendance at the webinar is not required to participate in the challenge.**
+**An informational webinar was held on March 21th 2023 \@ 12:00 ET. Attendance at the webinar was not required to participate in the challenge.**
+To access a PDF version of the slides, please follow [this link](https://github.com/NAEP-AS-Challenge/math-prediction/blob/main/NAEP%20Math%20AS%20Webinar%20slide%20Deck%20vpresented.pdf) 
 
 Advance webinar registration required at the [following URL](https://www.eventbrite.com/e/rfi-for-naep-math-automated-scoring-challenge-tickets-529659705437).
 
-In order to participate and receive the datasets, it is necessary to complete data security agreements. More information about eligibility requirements is [provided below](#eligibility) and the [NAEP Secure Data Access Application is available for download](resources/Data_Agreement_Forms.zip). This application must be completed and approved by IES personnel before an applicant will be provided access to the response data. Completed applications (please encrypt before transmission) should be sent to: [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov?subject=Math%20Challenge).
+In order to participate and receive the datasets, it is necessary to complete data security agreements. More information about eligibility requirements is [provided below](#eligibility) and the [NAEP Secure Data Access Application is available for download](resources/Data_Agreement_Forms.zip). This application must be completed and approved by IES personnel before an applicant will be provided access to the response data. Completed applications (please encrypt before transmission) should be sent to: [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov?subject=Math%20Challenge). Please note that due to the sensitive nature of this dataset, no online large language models (such as BARD or ChatGPT) can be used. 
 
 # Table of Contents
 
