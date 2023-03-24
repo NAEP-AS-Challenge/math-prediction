@@ -173,14 +173,16 @@ The following items and number of responses are provided in the dataset. Definit
 |:---------|------:|----:|----:|------:|-------:|:----------:|
 | VH134067 | 0.966 |   1 |   2 | 4,483 | 40,343 |   Type I   |
 | VH139380 | 0.981 |   1 |   3 | 2,018 | 18,157 |  Type II   |
-| VH266015 | 0.963 |   1 |   4 | 1,776 | 15,987 |   Type I   |
+| VH266015 | 0.963 |   1 |   3 | 1,776 | 15,228 |   Type I   |
 | VH266510 | 0.933 |   1 |   3 | 4,296 | 38,667 |  Type II   |
-| VH269384 | 0.970 |   1 |   4 | 1,758 | 15,826 |  Type II   |
-| VH271613 | 0.975 |   1 |   4 | 3,096 | 27,858 |  Type II   |
+| VH269384 | 0.970 |   1 |   3 | 1,758 | 15,819 |  Type II   |
+| VH271613 | 0.975 |   1 |   3 | 3,096 | 27,848 |  Type II   |
 | VH302907 | 0.980 |   1 |   2 | 4,241 | 38,173 |   Type I   |
 | VH304954 | 0.984 |   1 |   3 | 2,743 | 24,686 |  Type II   |
-| VH507804 | 0.991 |   1 |   4 | 1,827 | 16,443 |   Type I   |
+| VH507804 | 0.991 |   1 |   3 | 1,827 | 16,174 |   Type I   |
 | VH525628 | 0.956 |   1 |   3 | 1,808 | 16,275 |  Type II   |
+
+Note: For item VH266015, the maximum score in the rubric is 4; however, no students in the sample received this score.
 
 ## Variables Common to All Items
 
