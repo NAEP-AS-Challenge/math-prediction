@@ -171,16 +171,16 @@ The following items and number of responses are provided in the dataset. Definit
 
 | item     |   QWK | min | max |  test |  train | score type |
 |:---------|------:|----:|----:|------:|-------:|:----------:|
-| VH134067 | 0.966 |   1 |   2 | 4,483 | 40,343 |   Type I   |
-| VH139380 | 0.981 |   1 |   3 | 2,018 | 18,157 |  Type II   |
-| VH266015 | 0.963 |   1 |   3 | 1,776 | 15,228 |   Type I   |
-| VH266510 | 0.933 |   1 |   3 | 4,296 | 38,667 |  Type II   |
-| VH269384 | 0.970 |   1 |   3 | 1,758 | 15,819 |  Type II   |
-| VH271613 | 0.975 |   1 |   3 | 3,096 | 27,848 |  Type II   |
-| VH302907 | 0.980 |   1 |   2 | 4,241 | 38,173 |   Type I   |
-| VH304954 | 0.984 |   1 |   3 | 2,743 | 24,686 |  Type II   |
-| VH507804 | 0.991 |   1 |   3 | 1,827 | 16,174 |   Type I   |
-| VH525628 | 0.956 |   1 |   3 | 1,808 | 16,275 |  Type II   |
+| VH134067 | 0.966 |   1|   2| 4,483| 40,343|   Type I   |
+| VH139380 | 0.981 |   1|   3| 2,018| 18,157|   Type I   |
+| VH266015 | 0.910 |   1|   3| 1,692| 15,228|  Type II   |
+| VH266510 | 0.933 |   1|   3| 4,296| 38,667|   Type I   |
+| VH269384 | 0.948 |   1|   3| 1,758| 15,819|  Type II   |
+| VH271613 | 0.946 |   1|   3| 3,094| 27,848|  Type II   |
+| VH302907 | 0.980 |   1|   2| 4,241| 38,173|  Type II   |
+| VH304954 | 0.984 |   1|   3| 2,743| 24,686|   Type I   |
+| VH507804 | 0.992 |   1|   3| 1,797| 16,174|  Type II   |
+| VH525628 | 0.956 |   1|   3| 1,808| 16,275|   Type I   |
 
 Note: For item VH266015, the maximum score in the rubric is 4; however, no students in the sample received this score.
 
@@ -593,11 +593,11 @@ To minimize the risk of statistical disclosure, suppression was applied to demog
 
 ### Response Percentages
 
-<img src="files_for_readme/doublescored_pct_VH134067_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH139380_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH266015_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH266510_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH269384_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH271613_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH302907_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH304954_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH507804_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH525628_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_pct_VH134067_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH139380_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH266015_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH266510_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH269384_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH271613_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH302907_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH304954_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH507804_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_pct_VH525628_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/>
 
 ### Response Counts
 
-<img src="files_for_readme/doublescored_VH134067_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH139380_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH266015_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH266510_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH269384_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH271613_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH302907_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH304954_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH507804_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH525628_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/>
+<img src="files_for_readme/doublescored_VH134067_plots_90_10_byValue2023-02-22.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH139380_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH266015_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH266510_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH269384_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH271613_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH302907_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH304954_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH507804_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/> <img src="files_for_readme/doublescored_VH525628_plots_90_10_byValue2023-03-09.png" style="width:90.0%"/>
 
 <div>
 
