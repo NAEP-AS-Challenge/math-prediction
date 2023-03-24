@@ -23,11 +23,12 @@ Assessment Constructed Response Items using Natural Language Processing.
 | Submission Deadline   | 5/25/23   |
 | Winners Announced     | June 2023 |
 
-**An informational webinar will be held on March 21th 2023 \@ 12:00 ET. Attendance at the webinar is not required to participate in the challenge.**
+**An informational webinar was held on March 21th 2023 \@ 12:00 ET. Attendance at the webinar was not required to participate in the challenge.**
+To access a PDF version of the slides, please follow [this link](https://github.com/NAEP-AS-Challenge/math-prediction/blob/main/NAEP%20Math%20AS%20Webinar%20slide%20Deck%20vpresented.pdf) 
 
 Advance webinar registration required at the [following URL](https://www.eventbrite.com/e/rfi-for-naep-math-automated-scoring-challenge-tickets-529659705437).
 
-In order to participate and receive the datasets, it is necessary to complete data security agreements. More information about eligibility requirements is [provided below](#eligibility) and the [NAEP Secure Data Access Application is available for download](resources/Data_Agreement_Forms.zip). This application must be completed and approved by IES personnel before an applicant will be provided access to the response data. Completed applications (please encrypt before transmission) should be sent to: [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov?subject=Math%20Challenge).
+In order to participate and receive the datasets, it is necessary to complete data security agreements. More information about eligibility requirements is [provided below](#eligibility) and the [NAEP Secure Data Access Application is available for download](resources/Data_Agreement_Forms.zip). This application must be completed and approved by IES personnel before an applicant will be provided access to the response data. Completed applications (please encrypt before transmission) should be sent to: [automated-scoring-challenge\@ed.gov](mailto:automated-scoring-challenge@ed.gov?subject=Math%20Challenge). Please note that due to the sensitive nature of this dataset, no online large language models (such as BARD or ChatGPT) can be used. 
 
 # Table of Contents
 
@@ -168,19 +169,20 @@ The items included in this challenge have been scored by human scorers. To prepa
 
 The following items and number of responses are provided in the dataset. Definitions of the *score type* and how IRR is calculated are provided further below. Approximately 5% of the NAEP item responses were double scored. Quadradic Weighted Kappa (QWK) was calculated to estimate the inter-rater reliability for the double-scored responses. The number of responses, inter-rater reliability, score point range, and item type are provided below.
 
-| item    |   QWK| min| max|  test|  train| score_type |
-|:--------|-----:|---:|---:|-----:|------:|:----------:|
-| VH134067| 0.966|   1|   2| 4,483| 40,343|   Type I   |
-| VH139380| 0.981|   1|   3| 2,018| 18,157|   Type I   |
-| VH266015| 0.910|   1|   3| 1,692| 15,228|  Type II   |
-| VH266510| 0.933|   1|   3| 4,296| 38,667|   Type I   |
-| VH269384| 0.948|   1|   3| 1,758| 15,819|  Type II   |
-| VH271613| 0.946|   1|   3| 3,094| 27,848|  Type II   |
-| VH302907| 0.980|   1|   2| 4,241| 38,173|  Type II   |
-| VH304954| 0.984|   1|   3| 2,743| 24,686|   Type I   |
-| VH507804| 0.992|   1|   3| 1,797| 16,174|  Type II   |
-| VH525628| 0.956|   1|   3| 1,808| 16,275|   Type I   |
+| item     |   QWK | min | max |  test |  train | score type |
+|:---------|------:|----:|----:|------:|-------:|:----------:|
+| VH134067 | 0.966 |   1|   2| 4,483| 40,343|   Type I   |
+| VH139380 | 0.981 |   1|   3| 2,018| 18,157|   Type I   |
+| VH266015 | 0.910 |   1|   3| 1,692| 15,228|  Type II   |
+| VH266510 | 0.933 |   1|   3| 4,296| 38,667|   Type I   |
+| VH269384 | 0.948 |   1|   3| 1,758| 15,819|  Type II   |
+| VH271613 | 0.946 |   1|   3| 3,094| 27,848|  Type II   |
+| VH302907 | 0.980 |   1|   2| 4,241| 38,173|  Type II   |
+| VH304954 | 0.984 |   1|   3| 2,743| 24,686|   Type I   |
+| VH507804 | 0.992 |   1|   3| 1,797| 16,174|  Type II   |
+| VH525628 | 0.956 |   1|   3| 1,808| 16,275|   Type I   |
 
+Note: For item VH266015, the maximum score in the rubric is 4; however, no students in the sample received this score.
 
 ## Variables Common to All Items
 
