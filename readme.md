@@ -112,6 +112,9 @@ We anticipate that teams of individuals will participate. Applicants do not need
 
 3.  **Confidentiality Agreement & Notarized Affidavit of Non-Disclosure**. This is provided separately in the forms referenced below.
 
+**Please note** 
+All forms must be filled out completely. On the "security plan" form, the "Principal Project Officer" should list the individual leading the data analysis project. The "Senior Official" should be a different person with administrative responsibility appropriate to ensure that these data standards will be followed, such as a Dean, Department Chair, or other similar role. 
+
 ## Confidential Data Security
 
 The datasets used for this challenge contain student responses from previous NAEP assessments and are therefore considered NCES confidential materials. All participants must confirm that they are able to meet NCES Confidential Data security requirements, submit non-disclosure agreements about student responses, and confidentiality agreements. These requirements include restrictions on the use of data, security of data, and destruction of data when the analysis is completed. Data must also be destroyed/deleted within 30 days of completing the Challenge and all participants must submit a signed and witnessed form confirming that action. This form is also included within the security application.
