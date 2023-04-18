@@ -18,10 +18,10 @@ Assessment Constructed Response Items using Natural Language Processing.
 | Milestone             | Date      |
 |-----------------------|-----------|
 | Challenge Opens       | 3/7/23    |
-| Application Deadline  | 4/17/23   |
-| Test Dataset Released | 5/22/23   |
-| Submission Deadline   | 5/25/23   |
-| Winners Announced     | June 2023 |
+| Application Deadline  | 4/20/23   |
+| Test Dataset Released | 6/6/23   |
+| Submission Deadline   | 6/13/23   |
+| Winners Announced     | July 2023 |
 
 **An informational webinar was held on March 21th 2023 \@ 12:00 ET. Attendance at the webinar was not required to participate in the challenge.**
 To access a PDF version of the slides, please follow [this link](https://github.com/NAEP-AS-Challenge/math-prediction/blob/main/NAEP%20Math%20AS%20Webinar%20slide%20Deck%20vpresented.pdf) 
@@ -369,11 +369,11 @@ Prizes will be awarded to a single organization or lead contact, and distributio
 |--------------------------------------------|---------------------|
 | Challenge Posted                           | 3/7/23              |
 | Request for Information Webinar            | 3/21/23 at 12:00 ET |
-| Application Deadline                       | 4/17/23 at 11:59 ET |
-| Training Data Available                    | 3/8/23-5/25/2023    |
-| Test Data Provided                         | 5/22/23             |
-| Submission Deadline (Report & Predictions) | 5/26/23 at 11:59 ET |
-| Winners Announced                          | June 2023           |
+| Application Deadline                       | 4/20/23 at 4:59 ET |
+| Training Data Available                    | 3/8/23-6/6/2023    |
+| Test Data Provided                         | 6/6/23             |
+| Submission Deadline (Report & Predictions) | 6/13/23 at 11:59 ET |
+| Winners Announced                          | July 2023           |
 
 <a id="terms"></a>
 
