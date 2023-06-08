@@ -337,17 +337,17 @@ To submit your predicted scores, please use the following format to modify the t
 
 1.  Delete all columns except for "student_id"
 
-2.  Add a column "predicted_score" and enter your predicted score in that column. **Only one predicted score per response should be provided**.
+2.  Add a column "accession" which indicates the item the response corresponds to (NOTE: new field request)
 
-3.  Add a column "participant" and put in the email address for the project lead contact (you only need to enter in one row).
+3.  Add a column "predicted_score" and enter your predicted score in that column. **Only one predicted score per response should be provided**.
 
-4.  Your final dataset should only have three columns: "student_id", "predicted_score", and "participant".
+4.  add a column "participant" and put in the email address for the project lead contact (you only need to enter in one row).
 
-5.  Save the file using the same original filename in .CSV format.
+5.   Your final dataset should only have four columns: "student_id", "accession", "predicted_score", and "participant".
 
-6.  Repeat for all items and save into a single folder/directory.
+6.   Save the file with a filename of the organization or lead research .CSV format.
 
-7.  Zip that folder/directory. Add your technical report and upload to the secure site that was provided via email.
+7.   Add your technical report and upload to the secure site that was provided via email.
 
 <a id="prizes"></a>
 
