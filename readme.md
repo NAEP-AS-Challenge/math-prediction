@@ -333,7 +333,7 @@ Individuals with disabilities who need an accommodation or auxiliary aid in conn
 
 ### Predicted Score Data Format and Upload Process
 
-To submit your predicted scores, please use the following format to modify the test dataset provided for each item.
+To submit your predicted scores, please use the following format to modify the test dataset provided for each item.  A sample file format is provided [here](resources/example_submission_format_2.csv).
 
 1.  Delete all columns except for "student_id"
 
